@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+  cursor: pointer;
+
+  @include hoverColorTransition($color_accent-light, $color_text-color);
+
+  &--text {
+    color: $color_text-color;
+  }
+
+  &--auxiliary {
+    @include hoverColorTransition(
+      lighten($color_auxiliary, 10),
+      lighten($color_auxiliary, 25)
+    );
+  }
+}

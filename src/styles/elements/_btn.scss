@@ -1,0 +1,66 @@
+.btn {
+  position: relative;
+  padding: 13px 42px 12px 42px;
+  border: 5px solid #fcf0d6;
+  border-bottom: none;
+  border-radius: 8px;
+  box-shadow: $box-shadow_element;
+  color: #d98956;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  @extend %inline-flex-center;
+  @include hoverBackgroundTransition(
+    #ffdeae,
+    darken($color: #ffdeae, $amount: 5)
+  );
+  @media all and (max-width: 800px) {
+    flex: 1 120px;
+    padding: 13px 22px 12px 22px;
+    font-size: 1.3rem;
+  }
+
+  &::before {
+    position: absolute;
+    left: -50px;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    content: '';
+    transition: left 300ms;
+
+    @include phone-width() {
+      left: -40px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &:hover::before {
+    left: -40px;
+  }
+
+  &--start,
+  &--back {
+    margin-left: 40px;
+  }
+
+  &--start::before {
+    background-image: url('../../../public/images/game-icon/back.svg');
+    transform: rotate(180deg);
+  }
+
+  &--back::before {
+    background-image: url('../../../public/images/game-icon/back.svg');
+  }
+}

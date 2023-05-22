@@ -1,0 +1,116 @@
+.simple-btn {
+  padding: $block-padding_small;
+  border: none;
+  border-radius: $border-radius_layout;
+  color: $color_white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  @extend %inline-flex-center;
+  @include hoverBackgroundTransition(
+    $color_accent,
+    darken($color: $color_accent, $amount: 10)
+  );
+
+  &--dark {
+    @include hoverBackgroundTransition(
+      $color_accent-dark,
+      darken($color: $color_accent-dark, $amount: 10)
+    );
+  }
+
+  &--security {
+    @include hoverBackgroundTransition(
+      $color_security,
+      darken($color: $color_security, $amount: 10)
+    );
+  }
+
+  &--danger {
+    @include hoverBackgroundTransition(
+      $color_like,
+      darken($color: $color_like, $amount: 10)
+    );
+  }
+
+  &--dark-green {
+    @include hoverBackgroundTransition(#238080, darken(#238080, $amount: 10));
+  }
+
+  &--purple {
+    @include hoverBackgroundTransition(#6d3484, darken(#6d3484, $amount: 10));
+  }
+
+  &--yellow {
+    @include hoverBackgroundTransition(
+      $color_yellow,
+      darken($color: $color_yellow, $amount: 10)
+    );
+  }
+
+  //驗證信箱、忘記密碼、密碼修改、驗證成功、
+  &--green {
+    @include hoverBackgroundTransition(
+      $color_green,
+      darken($color: $color_green, $amount: 10)
+    );
+  }
+
+  &--google {
+    border: 1px solid $color_text-color;
+    background-color: $color_white;
+    color: $color_text-color;
+
+    > span[class^='icomoon-'] {
+      position: absolute;
+      right: $margin_base;
+      padding: 5px;
+      border: 1px solid $color_text-color;
+      border-radius: $radius-size_big;
+      background-color: $color_text-color;
+      color: $color_white;
+      font-size: 2rem;
+    }
+  }
+
+  &--facebook {
+    background-color: $color_facebook;
+
+    > span[class^='icomoon-'] {
+      position: absolute;
+      left: $margin_base;
+      padding: 5px;
+      padding-top: 10px;
+      padding-bottom: 0;
+      border-radius: $radius-size_big;
+      background-color: $color_white;
+      color: $color_facebook;
+      font-size: 2rem;
+    }
+  }
+
+  &--shadow {
+    box-shadow: $box-shadow_button;
+  }
+
+  &--radius {
+    border-radius: $radius-size_over;
+  }
+
+  &--border {
+    border: $color_white solid 1px;
+  }
+
+  &--large {
+    padding: $block-padding_small $block-padding_small * 2;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &--full {
+    width: 100%;
+  }
+}
