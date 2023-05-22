@@ -7,10 +7,10 @@ export default function HomePage() {
   const { t } = useTranslation('common');
 
   return (
-    <div>
+    <article className='home-container'>
       <NavBar />
       <h1>{t('welcome')}</h1>
-    </div>
+    </article>
   );
 }
 

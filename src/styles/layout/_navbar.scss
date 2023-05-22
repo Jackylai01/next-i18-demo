@@ -1,123 +1,14 @@
 .navbar {
-  position: absolute;
-  width: 100%;
-
   &__container {
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 30px;
-
-    @extend %layout-container;
-    @extend %flex-row-between;
-    @include phone-width() {
-      margin-top: $margin_base;
-    }
   }
 
   &__logo {
-    display: inline-flex;
-    margin-right: auto;
-    cursor: pointer;
-
-    @include pad-under-width {
-      width: 70%;
-    }
-
-    > span {
-      display: none;
-    }
   }
 
-  &__buttons {
-    @extend %flex-row-center;
-    @include pad-under-width {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 100;
-      align-items: flex-start;
-      flex-direction: column;
-      padding: 30px;
-      width: 260px;
-      height: 100%;
-      background-color: rgba($color: $color_text-accent, $alpha: 0.95);
-      transition: transform 300ms;
-      transform: translateX(-100%);
-
-      &.active {
-        transform: translateY(0);
+  &__list {
+    &__item {
+      &__link {
       }
-    }
-
-    > li {
-      @include layoutSpaceLeft($margin_base);
-      @include pad-under-width {
-        margin-bottom: 10px;
-        margin-left: 0;
-        width: 100%;
-
-        a {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  &__menu {
-    display: none;
-    color: $color_white;
-    cursor: pointer;
-
-    @include pad-under-width {
-      display: block;
-    }
-
-    > span:not([class^='icomoon-']) {
-      display: none;
-    }
-  }
-
-  &__close-menu {
-    display: none;
-
-    @include pad-under-width {
-      display: block;
-    }
-  }
-
-  &__dropdown {
-    position: relative;
-    margin-left: 20px;
-
-    > ul {
-      position: absolute;
-      top: calc(100% + $margin_small * 2.5);
-      right: 0;
-      z-index: $z-index_base;
-      visibility: hidden;
-      white-space: nowrap;
-      opacity: 0;
-      transition: visibility 300ms, opacity 300ms;
-
-      gap: $margin_small;
-      @extend %flex-column;
-      @include phone-width() {
-        right: 0;
-      }
-
-      &.active {
-        display: flex;
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-
-    .icomoon-person {
-      padding: 5px;
-      border-radius: 50%;
-      background-color: $color_white;
-      color: $color_accent;
-      cursor: pointer;
     }
   }
 }
