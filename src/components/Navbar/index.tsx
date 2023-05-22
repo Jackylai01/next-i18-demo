@@ -1,16 +1,8 @@
-// components/NavBar.tsx
-import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useLanguage } from 'src/hook/useLanguage';
 
 const NavBar = () => {
-  const { t, i18n } = useTranslation('common');
-  const router = useRouter();
-
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-    router.push(router.pathname, router.asPath, { locale: lng });
-  };
+  const { t, changeLanguage } = useLanguage();
 
   return (
     <nav>
