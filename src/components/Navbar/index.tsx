@@ -2,11 +2,29 @@ import Vector from '@public/Img/Icon/Vector.png';
 import Logo from '@public/Img/Logo/仲夏節LOGO-05.png';
 import { NextPage } from 'next';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLanguage } from 'src/hook/useLanguage';
 
 const NavBar: NextPage = () => {
+  const { t, changeLanguage } = useLanguage();
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 800) {
+        setMenuOpen(false);
+        setDropdownOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // 在元件卸載時清理事件監聽器
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <nav className={`navbar ${isMenuOpen ? 'navbar-active' : ''}`}>
@@ -18,22 +36,22 @@ const NavBar: NextPage = () => {
           <ul className='navbar__list'>
             <li className='navbar__item'>
               <a href='#' className='navbar__link'>
-                串聯活動
+                {t('nav.link1')}
               </a>
             </li>
             <li className='navbar__item'>
               <a href='#' className='navbar__link'>
-                主軸活動
+                {t('nav.link2')}
               </a>
             </li>
             <li className='navbar__item'>
               <a href='#' className='navbar__link'>
-                巡迴計畫
+                {t('nav.link3')}
               </a>
             </li>
             <li className='navbar__item'>
               <a href='#' className='navbar__link'>
-                相關網站
+                {t('nav.link4')}
               </a>
             </li>
           </ul>
@@ -48,16 +66,35 @@ const NavBar: NextPage = () => {
           </span>
           <section
             className='navbar__icon'
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
+            onClick={() => setDropdownOpen(!isDropdownOpen)}
           >
-            <Image src={Vector} alt='Logo' width={30} height={30} />
+            <Image src={Vector} alt='Logo' width={35} height={25} />
             {isDropdownOpen && (
               <ul className='navbar__dropdown'>
-                <li className='navbar__dropdown-item'>繁體中文</li>
-                <li className='navbar__dropdown-item'>English</li>
-                <li className='navbar__dropdown-item'>日文語</li>
-                <li className='navbar__dropdown-item'>한국인</li>
+                <li
+                  className='navbar__dropdown-item'
+                  onClick={() => changeLanguage('zh')} // 繁體中文
+                >
+                  繁體中文
+                </li>
+                <li
+                  className='navbar__dropdown-item'
+                  onClick={() => changeLanguage('en')} // English
+                >
+                  English
+                </li>
+                <li
+                  className='navbar__dropdown-item'
+                  onClick={() => changeLanguage('ja')} // 日文
+                >
+                  日本語
+                </li>
+                <li
+                  className='navbar__dropdown-item'
+                  onClick={() => changeLanguage('ko')} // Korean
+                >
+                  한국어
+                </li>
               </ul>
             )}
           </section>
