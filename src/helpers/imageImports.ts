@@ -13,9 +13,16 @@ export { default as BLACKBALL } from '@public/Img/Footer/12.黑丸嫩仙草.png'
 export { default as MYFEEL } from '@public/Img/Footer/13.MYFEEL品味誌.png';
 export { default as BEEBUZZ } from '@public/Img/Footer/14.微醺蜜月beebuzz_logo.png';
 export { default as RAILWAYBENTO } from '@public/Img/Footer/台鐵.png';
+/*串聯活動 專用 */
+export { default as FESTIVAL } from '@public/Img/Icon/festival icon 1.png';
+export { default as LINK } from '@public/Img/Icon/link 1.png';
+export { default as MIDDLE } from '@public/Img/map/官網台灣地圖_中部區域.png';
+export { default as NORTH } from '@public/Img/map/官網台灣地圖_北部區域.png';
+export { default as SOUTH } from '@public/Img/map/官網台灣地圖_南部區域.png';
+export { default as EASE } from '@public/Img/map/官網台灣地圖_東部區域.png';
+export { default as ISLANDS } from '@public/Img/map/官網台灣地圖_離島區域.png';
 
-/*輪播圖專用 */
-
+/*輪播圖 專用 */
 export const images = [
   {
     img: require('@public/Img/Carousel/img01.jpg'),

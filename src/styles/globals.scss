@@ -26,14 +26,13 @@
 @import 'placeholder/effect-element';
 
 // // // 結構(Layout)配置撰寫
-@import 'layout/container';
 @import 'layout/body';
 @import 'layout/navbar';
-@import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
 @import 'layout/swiper';
 @import 'layout/carousel';
+@import 'layout/link';
 
 // // // 格線(Grid)配置撰寫
 @import 'grid/row';

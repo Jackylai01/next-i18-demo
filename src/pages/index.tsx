@@ -1,5 +1,6 @@
 import Carousel from '@components/Carousel';
 import Footer from '@components/Footer';
+import LinkActivity from '@components/LinkActivity';
 import MainContent from '@components/Main';
 import NavBar from '@components/Navbar';
 import { GetStaticPropsContext } from 'next';
@@ -13,6 +14,7 @@ export default function HomePage() {
         <MainContent />
       </div>
       <Carousel />
+      <LinkActivity />
       <Footer />
     </>
   );
