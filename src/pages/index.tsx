@@ -2,6 +2,7 @@ import Carousel from '@components/Carousel';
 import Footer from '@components/Footer';
 import LinkActivity from '@components/LinkActivity';
 import MainContent from '@components/Main';
+import MainActivity from '@components/MainActivity';
 import NavBar from '@components/Navbar';
 import { GetStaticPropsContext } from 'next';
 import { getI18nProps } from '../helpers/i18n';
@@ -15,6 +16,7 @@ export default function HomePage() {
       </div>
       <Carousel />
       <LinkActivity />
+      <MainActivity />
       <Footer />
     </>
   );

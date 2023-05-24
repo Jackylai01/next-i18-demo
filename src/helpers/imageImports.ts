@@ -1,4 +1,5 @@
 /*footer專用 */
+export { default as BAN } from '@public/Img/Activity/Ban2.png';
 export { default as KLOOK } from '@public/Img/Footer/01.Klook客路.png';
 export { default as JET } from '@public/Img/Footer/02.東南旅遊.png';
 export { default as GOMAJI } from '@public/Img/Footer/03.gomaji.png';
@@ -13,6 +14,8 @@ export { default as BLACKBALL } from '@public/Img/Footer/12.黑丸嫩仙草.png'
 export { default as MYFEEL } from '@public/Img/Footer/13.MYFEEL品味誌.png';
 export { default as BEEBUZZ } from '@public/Img/Footer/14.微醺蜜月beebuzz_logo.png';
 export { default as RAILWAYBENTO } from '@public/Img/Footer/台鐵.png';
+/*主軸活動 專用 */
+export { default as ACTIVITY } from '@public/Img/Icon/activity 1.png';
 /*串聯活動 專用 */
 export { default as FESTIVAL } from '@public/Img/Icon/festival icon 1.png';
 export { default as LINK } from '@public/Img/Icon/link 1.png';

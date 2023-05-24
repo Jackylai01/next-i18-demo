@@ -1,0 +1,42 @@
+.activity {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0rem;
+
+  &__container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+
+  &__title {
+    // If needed, add styles for title here.
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: row; // Change this to arrange child elements in a row.
+    align-items: center; // This will vertically center the child elements.
+    justify-content: center;
+    margin: 3rem 0rem;
+
+    &--caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0rem 2rem;
+      border: 1px solid red;
+      > h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+}
