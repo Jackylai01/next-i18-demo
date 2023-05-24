@@ -2,79 +2,75 @@
   width: 100%;
   height: 100%;
   position: relative;
+}
 
-  &--dragging {
-    cursor: grab;
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
 
-    img {
-      pointer-events: none;
-    }
-  }
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
 
-  &__wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-  }
+.swiper .prev,
+.swiper .next {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0005;
+  color: white;
+  padding: 0 10px;
+  cursor: pointer;
+  z-index: 1;
+  user-select: none;
+  display: none;
+}
 
-  &__slide {
-    width: 100%;
-    height: 100%;
-  }
+.swiper .prev {
+  left: 0;
+}
 
-  &__button {
-    &--prev,
-    &--next {
-      font-size: 2.5rem;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: #0005;
-      color: white;
-      padding: 0 10px;
-      cursor: pointer;
-      z-index: 1;
-      user-select: none;
-      display: none;
-    }
+.swiper .next {
+  right: 0;
+}
 
-    &--prev {
-      left: 0;
-    }
+.swiper:hover .prev,
+.swiper:hover .next {
+  display: block;
+}
 
-    &--next {
-      right: 0;
-    }
-  }
+.swiper-pagination {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  z-index: 1;
+}
 
-  &:hover {
-    .swiper__button--prev,
-    .swiper__button--next {
-      display: block;
-    }
-  }
+.swiper-pagination span {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-  &__pagination {
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    z-index: 1;
+.swiper-pagination span.active {
+  background: cornflowerblue;
+}
 
-    &-dot {
-      width: 10px;
-      height: 10px;
-      background: #bbb;
-      border-radius: 50%;
-      cursor: pointer;
+.swiper.dragging {
+  cursor: grab;
+}
 
-      &--active {
-        background: cornflowerblue;
-      }
-    }
-  }
+.swiper.dragging img {
+  pointer-events: none;
 }

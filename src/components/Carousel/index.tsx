@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from '@components/Swiper';
 import images from '@public/Img/Carousel/index';
 import { NextPage } from 'next';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 const Carousel: NextPage = () => {
@@ -47,6 +48,7 @@ const Carousel: NextPage = () => {
       }
     }
   }, [widthOfWindow]);
+
   return (
     <article className='carousel'>
       <main className='carousel__container'>
@@ -59,7 +61,7 @@ const Carousel: NextPage = () => {
                 }`}
                 onClick={() => setCurrentSlide(index)}
               >
-                <img src={image} alt='' />
+                <Image src={image} alt='' objectFit='cover' layout='fill' />
               </div>
             </SwiperSlide>
           ))}
