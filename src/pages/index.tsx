@@ -1,3 +1,4 @@
+import Footer from '@components/Footer';
 import MainContent from '@components/Main';
 import NavBar from '@components/Navbar';
 import { GetStaticPropsContext } from 'next';
@@ -6,8 +7,11 @@ import { getI18nProps } from '../helpers/i18n';
 export default function HomePage() {
   return (
     <>
-      <NavBar />
-      <MainContent />
+      <div style={{ minHeight: '100vh' }}>
+        <NavBar />
+        <MainContent />
+      </div>
+      <Footer />
     </>
   );
 }

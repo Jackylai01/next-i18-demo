@@ -1,35 +1,25 @@
 .footer {
-  padding: $layout-size_base 0;
-  min-height: 8rem;
-  background-color: $color_footer-background;
-  color: $color_white;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  @extend %flex-column-between;
-
-  &__container {
-    align-items: center;
-    flex-wrap: wrap;
-
-    @extend %flex-row-between;
-    @extend %layout-container;
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ff9900;
+    font-weight: 600;
+    border-left: 2px solid #ff9900;
+    padding-left: 1rem;
   }
 
-  &__info {
-    flex: 1;
-  }
-
-  &__aside {
-    flex: 0 300px;
-    flex-wrap: wrap;
-
-    a {
-      @include layoutSpaceLeft(15px);
-
-      &:last-child {
-        display: inline-block;
-        margin-top: $margin_base;
-        margin-left: unset;
-      }
-    }
+  &__Img {
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 1rem 0rem;
   }
 }
