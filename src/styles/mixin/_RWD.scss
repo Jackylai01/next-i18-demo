@@ -33,6 +33,13 @@ $XS-media: 280px;
   }
 }
 
+// 1240px~0 Display
+@mixin pc-under-width() {
+  @media all and (max-width: $L-media) {
+    @content;
+  }
+}
+
 // 860px~0 Display
 @mixin pad-under-width() {
   @media all and (max-width: $M-media) {
