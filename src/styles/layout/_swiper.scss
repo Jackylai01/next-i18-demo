@@ -15,50 +15,25 @@
   height: 100%;
 }
 
-.swiper .prev,
-.swiper .next {
-  font-size: 2.5rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #0005;
-  color: white;
-  padding: 0 10px;
-  cursor: pointer;
-  z-index: 1;
-  user-select: none;
-  display: none;
-}
-
-.swiper .prev {
-  left: 0;
-}
-
-.swiper .next {
-  right: 0;
-}
-
-.swiper:hover .prev,
-.swiper:hover .next {
-  display: block;
-}
-
 .swiper-pagination {
-  width: 100%;
-  height: 20px;
+  height: 100%;
+  width: 20px;
   position: absolute;
+  right: 0;
   bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  padding-right: 2rem;
   z-index: 1;
 }
 
 .swiper-pagination span {
   width: 10px;
   height: 10px;
-  background: #bbb;
+  background: #ffffff;
   border-radius: 50%;
   cursor: pointer;
 }

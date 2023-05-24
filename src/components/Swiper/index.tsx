@@ -94,13 +94,6 @@ export const Swiper = ({
         {children.slice(currentSlide, currentSlide + slidesPerView)}
       </div>
 
-      <span className='prev' onClick={() => plusSlide(-1)}>
-        &#8249;
-      </span>
-      <span className='next' onClick={() => plusSlide(1)}>
-        &#8250;
-      </span>
-
       <div className='swiper-pagination'>
         {Array.from({ length: numOfDots }, (_, index) => (
           <span

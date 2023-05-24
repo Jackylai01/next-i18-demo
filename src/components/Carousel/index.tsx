@@ -63,9 +63,11 @@ const Carousel: NextPage = () => {
                 onClick={() => setCurrentSlide(index)}
               >
                 <Image src={data.img} alt='' objectFit='cover' layout='fill' />
-                <article>
-                  <h1>{data.title}</h1>
-                  <p>{data.desc}</p>
+                <article className='carousel__desc'>
+                  <h1 className='carousel__desc--title'>{data.title}</h1>
+                  <br />
+                  <br />
+                  <p className='carousel__desc--text'>{data.desc}</p>
                 </article>
               </section>
             </SwiperSlide>
