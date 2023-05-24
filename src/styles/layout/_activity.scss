@@ -9,29 +9,86 @@
   &__container {
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
   }
 
   &__title {
-    // If needed, add styles for title here.
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ff4155;
+    position: relative;
+    text-align: center;
+    h1 {
+      display: inline-block;
+      padding: 0 1rem;
+      > span {
+        padding: 0rem 1rem;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 90px;
+        height: 2px;
+        background-color: #ff4155;
+        transform: translateX(-100%);
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 90px;
+        height: 2px;
+        background-color: #ff4155;
+        transform: translateX(100%);
+      }
+    }
   }
 
   &__card {
     display: flex;
-    flex-direction: row; // Change this to arrange child elements in a row.
-    align-items: center; // This will vertically center the child elements.
+    flex-direction: row;
     justify-content: center;
-    margin: 3rem 0rem;
+
+    @include pad-under-width() {
+      flex-direction: column;
+    }
+
+    &--img {
+      flex: 1 1 30%;
+      position: relative;
+      max-width: 300px;
+
+      @include pad-under-width() {
+        flex: 1 1 100%;
+      }
+    }
 
     &--caption {
+      flex: 1 1 70%;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
-      justify-content: space-around;
-      padding: 0rem 2rem;
-      border: 1px solid red;
+      justify-content: center;
+      min-width: 300px;
+      padding-left: 2rem;
+      @include pad-under-width() {
+        flex: 1 1 100%;
+        padding-left: 0rem;
+      }
+
+      &-content {
+        margin: 2rem 0rem;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+
       > h1 {
         font-size: 2rem;
         font-weight: 600;
