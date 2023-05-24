@@ -13,3 +13,53 @@ export { default as BLACKBALL } from '@public/Img/Footer/12.黑丸嫩仙草.png'
 export { default as MYFEEL } from '@public/Img/Footer/13.MYFEEL品味誌.png';
 export { default as BEEBUZZ } from '@public/Img/Footer/14.微醺蜜月beebuzz_logo.png';
 export { default as RAILWAYBENTO } from '@public/Img/Footer/台鐵.png';
+
+/*輪播圖專用 */
+
+export const images = [
+  {
+    img: require('@public/Img/Carousel/img01.jpg'),
+    title: '標題測試',
+    desc: '描述測試',
+  },
+  {
+    img: require('@public/Img/Carousel/img02.jpg'),
+    title: '標題測試',
+    desc: '描述測試',
+  },
+  {
+    img: require('@public/Img/Carousel/img03.jpg'),
+    title: '標題測試',
+    desc: '描述測試',
+  },
+  {
+    img: require('@public/Img/Carousel/img04.jpg'),
+    title: '標題測試',
+    desc: '描述測試',
+  },
+  {
+    img: require('@public/Img/Carousel/img05.jpg'),
+    title: '標題測試',
+    desc: '描述測試',
+  },
+  {
+    img: require('@public/Img/Carousel/img06.jpg'),
+    title: '標題測試',
+    desc: '描述測試',
+  },
+  {
+    img: require('@public/Img/Carousel/img07.jpg'),
+    title: '標題測試',
+    desc: '描述測試',
+  },
+  {
+    img: require('@public/Img/Carousel/img08.jpg'),
+    title: '標題測試',
+    desc: '描述測試',
+  },
+  {
+    img: require('@public/Img/Carousel/img09.jpg'),
+    title: '標題測試',
+    desc: '描述測試',
+  },
+];
