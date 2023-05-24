@@ -1,3 +1,4 @@
+import Carousel from '@components/Carousel';
 import Footer from '@components/Footer';
 import MainContent from '@components/Main';
 import NavBar from '@components/Navbar';
@@ -11,6 +12,7 @@ export default function HomePage() {
         <NavBar />
         <MainContent />
       </div>
+      <Carousel />
       <Footer />
     </>
   );
