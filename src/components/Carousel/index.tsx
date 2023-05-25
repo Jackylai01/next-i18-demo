@@ -1,15 +1,14 @@
 import { Swiper, SwiperSlide } from '@components/Swiper';
-
 import { images } from '@helpers/imageImports';
 import { NextPage } from 'next';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { useLanguage } from 'src/hook/useLanguage';
 
 const Carousel: NextPage = () => {
+  const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
-  // Responsive
   const [perView, setPerView] = useState(4);
-
   const [widthOfWindow, setWidthOfWindow] = useState<number | null>(null);
 
   useEffect(() => {
@@ -64,10 +63,14 @@ const Carousel: NextPage = () => {
               >
                 <Image src={data.img} alt='' objectFit='cover' layout='fill' />
                 <article className='carousel__desc'>
-                  <h1 className='carousel__desc--title'>{data.title}</h1>
+                  <h1 className='carousel__desc--title'>
+                    {t(`carousel.title${index + 1}`)}
+                  </h1>
                   <br />
                   <br />
-                  <p className='carousel__desc--text'>{data.desc}</p>
+                  <p className='carousel__desc--text'>
+                    {t(`carousel.desc${index + 1}`)}
+                  </p>
                 </article>
               </section>
             </SwiperSlide>

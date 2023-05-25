@@ -19,5 +19,29 @@
     "summerSeries": "Midsummer Series Activities",
     "activity": "Activity",
     "link": "Link"
+  },
+  "carousel": {
+    "carousel": {
+      "title1": "TEST",
+      "desc1": "TEST",
+      "title2": "TEST01",
+      "desc2": "TEST01",
+      "title3": "TEST02",
+      "desc3": "TEST02",
+      "title4": "TEST04",
+      "desc4": "TEST04",
+      "title5": "TEST05",
+      "desc5": "TEST05",
+      "title6": "TEST06",
+      "desc6": "TEST06",
+      "title7": "TEST07",
+      "desc7": "TEST07",
+      "title8": "TEST08",
+      "desc8": "TEST08",
+      "title9": "TEST09",
+      "desc9": "TEST09",
+      "title10": "TEST10",
+      "desc10": "TEST10"
+    }
   }
 }
