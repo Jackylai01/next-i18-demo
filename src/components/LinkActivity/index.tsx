@@ -10,9 +10,11 @@ import {
 import { NextPage } from 'next';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useLanguage } from 'src/hook/useLanguage';
 
 const LinkActivity: NextPage = () => {
-  const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+  const { t } = useLanguage();
+  const [selectedRegion, setSelectedRegion] = useState<string>('北部地區');
 
   const handleClick = (region: string) => {
     setSelectedRegion(region);
@@ -84,11 +86,11 @@ const LinkActivity: NextPage = () => {
       <main className='link__container'>
         <header className='link__title'>
           <h1>
-            串聯
+            {t('linkActivity.link')}
             <span>
               <Image src={FESTIVAL} width={20} height={20} />
             </span>
-            活動
+            {t('linkActivity.activity')}
           </h1>
         </header>
         <footer className='link__items'>
@@ -96,54 +98,62 @@ const LinkActivity: NextPage = () => {
             className='link__items--item link__items--item-1'
             onClick={() => handleClick('北部地區')}
           >
-            北部地區
+            {t('linkActivity.north')}
           </span>
           <span
             className='link__items--item link__items--item-2'
             onClick={() => handleClick('中部地區')}
           >
-            中部地區
+            {t('linkActivity.middle')}
           </span>
           <span
             className='link__items--item link__items--item-3'
             onClick={() => handleClick('南部地區')}
           >
-            南部地區
+            {t('linkActivity.south')}
           </span>
           <span
             className='link__items--item link__items--item-4'
             onClick={() => handleClick('東部地區')}
           >
-            東部地區
+            {t('linkActivity.east')}
           </span>
           <span
             className='link__items--item link__items--item-5'
             onClick={() => handleClick('離島地區')}
           >
-            離島地區
+            {t('linkActivity.islands')}
           </span>
         </footer>
         <section className='link__card'>
           {selectedImage}
           <ul>
             <span>
-              <h2>北部地區仲夏系列活動區</h2>
+              <h2>
+                {t('linkActivity.north') + t('linkActivity.summerSeries')}
+              </h2>
               <Image src={LINK} width={20} height={20} />
             </span>
             <span>
-              <h2>中部地區仲夏系列活動區</h2>
+              <h2>
+                {t('linkActivity.middle') + t('linkActivity.summerSeries')}
+              </h2>
               <Image src={LINK} width={20} height={20} />
             </span>
             <span>
-              <h2>南部地區仲夏系列活動區</h2>
+              <h2>
+                {t('linkActivity.south') + t('linkActivity.summerSeries')}
+              </h2>
               <Image src={LINK} width={20} height={20} />
             </span>
             <span>
-              <h2>東部地區仲夏系列活動區</h2>
+              <h2>{t('linkActivity.east') + t('linkActivity.summerSeries')}</h2>
               <Image src={LINK} width={20} height={20} />
             </span>
             <span>
-              <h2>離島地區仲夏系列活動區</h2>
+              <h2>
+                {t('linkActivity.islands') + t('linkActivity.summerSeries')}
+              </h2>
               <Image src={LINK} width={20} height={20} />
             </span>
           </ul>

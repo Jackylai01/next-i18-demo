@@ -1,7 +1,12 @@
 .navbar {
+  position: fixed;
   width: 100%;
   z-index: 1;
-  position: fixed;
+
+  &-scrolling {
+    background-color: rgb(255, 184, 108);
+    transition: background-color 0.5s ease-in-out;
+  }
 
   &__container {
     display: flex;
@@ -31,7 +36,7 @@
     flex-wrap: wrap;
     list-style-type: none;
 
-    @media screen and (max-width: 800px) {
+    @include pad-under-width() {
       position: absolute;
       top: 80px;
       left: 0;
@@ -39,6 +44,7 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       font-size: 1.5rem;
       font-weight: bold;
       background-color: rgb(247, 158, 125);
@@ -50,7 +56,7 @@
   &__item {
     padding: 0rem 1rem;
 
-    @media screen and (max-width: 800px) {
+    @include pad-under-width() {
       display: block;
       font-size: 22px;
       font-weight: normal;
@@ -66,7 +72,7 @@
     color: #0075c9;
     font-weight: 600;
 
-    @media screen and (max-width: 800px) {
+    @include pad-under-width() {
       background-color: rgb(247, 158, 125);
     }
   }
@@ -75,7 +81,7 @@
     display: none;
     cursor: pointer;
     position: relative;
-    @media screen and (max-width: 800px) {
+    @include pad-under-width() {
       display: flex;
       justify-content: center;
     }
@@ -96,7 +102,6 @@
     position: absolute;
     top: 100%;
     right: 0;
-
     list-style-type: none;
     padding: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

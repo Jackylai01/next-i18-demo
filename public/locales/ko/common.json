@@ -9,5 +9,15 @@
     "title": "중여름 대만",
     "description1": "이 부분은 대만 중여름에 관한 설명입니다. 이 설명을 한국어로 번역해야 합니다.",
     "description2": "이 부분도 한국어로 번역해야 합니다."
+  },
+  "linkActivity": {
+    "north": "북부 지역",
+    "middle": "중부 지역",
+    "south": "남부 지역",
+    "east": "동부 지역",
+    "islands": "섬 지역",
+    "summerSeries": "중여름 시리즈 활동 지역",
+    "activity": "활동",
+    "link": "링크"
   }
 }

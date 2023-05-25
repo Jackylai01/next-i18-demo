@@ -14,11 +14,15 @@ export { default as BLACKBALL } from '@public/Img/Footer/12.黑丸嫩仙草.png'
 export { default as MYFEEL } from '@public/Img/Footer/13.MYFEEL品味誌.png';
 export { default as BEEBUZZ } from '@public/Img/Footer/14.微醺蜜月beebuzz_logo.png';
 export { default as RAILWAYBENTO } from '@public/Img/Footer/台鐵.png';
-/*主軸活動 專用 */
 export { default as ACTIVITY } from '@public/Img/Icon/activity 1.png';
 /*串聯活動 專用 */
 export { default as FESTIVAL } from '@public/Img/Icon/festival icon 1.png';
 export { default as LINK } from '@public/Img/Icon/link 1.png';
+/*主軸活動 專用 */
+export { default as BACKGROUND } from '@public/Img/Logo/home.png';
+export { default as LOGO } from '@public/Img/Logo/仲夏節LOGO-05.png';
+export { default as DYNAMIC } from '@public/Img/Main/背景動態.png';
+/*主視覺 專用 */
 export { default as MIDDLE } from '@public/Img/map/官網台灣地圖_中部區域.png';
 export { default as NORTH } from '@public/Img/map/官網台灣地圖_北部區域.png';
 export { default as SOUTH } from '@public/Img/map/官網台灣地圖_南部區域.png';

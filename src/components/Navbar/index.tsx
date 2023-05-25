@@ -9,6 +9,7 @@ const NavBar: NextPage = () => {
   const { t, changeLanguage } = useLanguage();
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isScrolling, setScrolling] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,16 +19,31 @@ const NavBar: NextPage = () => {
       }
     };
 
-    window.addEventListener('resize', handleResize);
+    const handleScroll = () => {
+      // 新增一個用於處理滾動事件的函數
+      if (window.scrollY > 0) {
+        // 當滾動距離大於 0 時
+        setScrolling(true); // 設定正在滾動
+      } else {
+        setScrolling(false); // 設定非正在滾動
+      }
+    };
 
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('scroll', handleScroll);
     // 在元件卸載時清理事件監聽器
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   return (
-    <nav className={`navbar ${isMenuOpen ? 'navbar-active' : ''}`}>
+    <nav
+      className={`navbar ${isScrolling ? 'navbar-scrolling' : ''} ${
+        isMenuOpen ? 'navbar-active' : ''
+      }`}
+    >
       <article className='navbar__container'>
         <a href='/' className='navbar__logo'>
           <Image src={Logo} alt='Logo' layout='responsive' />

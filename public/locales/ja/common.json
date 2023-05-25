@@ -9,5 +9,15 @@
     "title": "ミッドサマー台湾",
     "description1": "これは台湾のミッドサマーに関する説明です。これを日本語に翻訳する必要があります。",
     "description2": "これも日本語に翻訳する必要があります。"
+  },
+  "linkActivity": {
+    "north": "北部地域",
+    "middle": "中部地域",
+    "south": "南部地域",
+    "east": "東部地域",
+    "islands": "島地域",
+    "summerSeries": "真夏のシリーズ活動エリア",
+    "activity": "アクティビティ",
+    "link": "リンク"
   }
 }
