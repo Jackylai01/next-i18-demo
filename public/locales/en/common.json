@@ -43,5 +43,24 @@
       "title10": "TEST10",
       "desc10": "TEST10"
     }
+  },
+  "mainActivity": {
+    "spindle": "Main",
+    "activity": "Activity",
+    "title": "Island Life Festival 2023",
+    "desc": "Peace Island Geological Park - a secret place in the world, with a sea-erosion landscape that resembles a work of divine craftsmanship. The Island Life Festival is held in mid-summer, with plans including water recreational activities, local concerts, island markets, local short trips, immersive experiences, and more. These activities connect local culture and specialties, promoting maritime tourism and sustainable travel in the Keelung and Peace Island areas. With 'sustainable development and ocean healing' as the main marketing highlights, we aim to boost the local brand's tourism value. Those who yearn for beautiful coastlines need not go abroad; the rare and magnificent coastal charm can be enjoyed right on the North Coast.",
+    "title01": "Fun Tour in Maolin - Cool Ice-Tasting",
+    "desc01": "This event is for operators in the Kaohsiung tourism circle (including Taiwan Good Travel, Taiwan Tour Bus operators). When customers spend up to a certain amount, they will receive summer benefits (gifts or discount coupons, such as ice product coupons, cool fans, cooling towels). You can exchange for ice products and drinks such as high mountain Aiyu, banana shaved ice, fruit juice, and mountain tea.",
+    "desc02": "Flash gathering events, over 20 exchange merchants, related promotional materials (stand-up signs at each store and our service desk), posters sent for promotion in each store, etc.",
+    "desc03": "The flash gathering event is expected to be held at the Kaohsiung Far Eastern Department Store, with 15 to 20 stalls from the Kaohsiung tourism circle participating. Stalls will offer items such as Aiyu, Frosty QiMu, and native mountain tea.",
+    "title02": "Alishan Four Seasons Tea Journey - Summer Tea Party",
+    "desc04": "In recent years, Alishan has been committed to promoting thematic tourism, especially tea-related travel. By combining Alishan's tea industry and tourism, we are switching up the style of the Four Seasons Tea Party event this year to cater to more diverse groups. We hope that all different needs can be satisfied when people visit Alishan, and that the various industries in Alishan can develop further through this promotion.",
+    "desc05": "The Alishan Four Seasons Tea Journey holds four tea parties in spring, summer, autumn, and winter, each in a lively and engaging manner to attract tourists from different groups to the Alishan tea tourism.",
+    "desc06": "The Alishan Four Seasons Tea Journey is scheduled to host the Spring Tea Music Festival on April 22 (Saturday) and 23 (Sunday), the Summer Tea Picnic Day on July 22 (Saturday), the Autumn Mountain-viewing Tea Journey and Forest Tea Journey on September 9 (Saturday), and the Winter Root-seeking Tea Journey on November 25 (Saturday).",
+    "desc07": "With the scent of tea and the landscape of Alishan in all four seasons, taste the tea soup from different seasons in Alishan and experience a diverse, delicate, and in-depth tea journey.",
+    "title03": "2023 East Coast Land Art Festival and Moonlight Sea Concert",
+    "desc08": "Taiwan's East Coast is expansive and captivating, sometimes beautiful, sometimes wild, sometimes mysterious, sometimes outgoing. The people living here are quiet and natural, simple and free. Artists find their souls here and immerse their senses in their creations. An installation art piece reflecting the seascape or a piece of music that touches the heart, all coexist in the East Coast Land Art Festival (TEC LandArt Festival).",
+    "desc09": "The East Coast Land Art Festival, hosted by the East Coast National Scenic Area Administration since 2015, is an art festival centered on themes of natural environment, tribal life, dwelling, and adventurous travels.",
+    "desc10": "The event includes 'Residency Creation' which invites artists from home and abroad to create art works on the East Coast, 'Art Life Platform' which connects various art spaces, 'Moonlight Music Concert and Creative Market', where the moonlight sparkles and performers perform, along with local flavor markets. It's a summer art feast, inviting travelers to experience the charming East Coast."
   }
 }
