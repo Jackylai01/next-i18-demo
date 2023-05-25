@@ -1,5 +1,6 @@
-/*footer專用 */
 export { default as BAN } from '@public/Img/Activity/Ban2.png';
+export { default as ACTIVITY01 } from '@public/Img/Activity/島嶼市集.jpeg.jpg';
+export { default as ACTIVITY02 } from '@public/Img/Activity/茂林谷06.jpg';
 export { default as KLOOK } from '@public/Img/Footer/01.Klook客路.png';
 export { default as JET } from '@public/Img/Footer/02.東南旅遊.png';
 export { default as GOMAJI } from '@public/Img/Footer/03.gomaji.png';
@@ -15,14 +16,11 @@ export { default as MYFEEL } from '@public/Img/Footer/13.MYFEEL品味誌.png';
 export { default as BEEBUZZ } from '@public/Img/Footer/14.微醺蜜月beebuzz_logo.png';
 export { default as RAILWAYBENTO } from '@public/Img/Footer/台鐵.png';
 export { default as ACTIVITY } from '@public/Img/Icon/activity 1.png';
-/*串聯活動 專用 */
 export { default as FESTIVAL } from '@public/Img/Icon/festival icon 1.png';
 export { default as LINK } from '@public/Img/Icon/link 1.png';
-/*主軸活動 專用 */
 export { default as BACKGROUND } from '@public/Img/Logo/home.png';
 export { default as LOGO } from '@public/Img/Logo/仲夏節LOGO-05.png';
 export { default as DYNAMIC } from '@public/Img/Main/背景動態.png';
-/*主視覺 專用 */
 export { default as MIDDLE } from '@public/Img/map/官網台灣地圖_中部區域.png';
 export { default as NORTH } from '@public/Img/map/官網台灣地圖_北部區域.png';
 export { default as SOUTH } from '@public/Img/map/官網台灣地圖_南部區域.png';
