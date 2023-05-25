@@ -29,24 +29,24 @@
         padding: 0rem 1rem;
       }
       &:before {
-        content: ''; // 偽元素需要 content 屬性才能顯示
-        position: absolute; // 使線可以相對於 h1 定位
-        top: 50%; // 將線置於 h1 的垂直中心
-        left: 0; // 將線置於 h1 的左側
-        width: 90px; // 設置線的長度
-        height: 2px; // 設置線的厚度
-        background-color: #00b2e3; // 設置線的顏色
-        transform: translateX(-100%); // 將線向左移動，使其不覆蓋 h1 的內容
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 90px;
+        height: 2px;
+        background-color: #00b2e3;
+        transform: translateX(-100%);
       }
       &:after {
-        content: ''; // 偽元素需要 content 屬性才能顯示
-        position: absolute; // 使線可以相對於 h1 定位
-        top: 50%; // 將線置於 h1 的垂直中心
-        right: 0; // 將線置於 h1 的右側
-        width: 90px; // 設置線的長度
-        height: 2px; // 設置線的厚度
-        background-color: #00b2e3; // 設置線的顏色
-        transform: translateX(100%); // 將線向右移動，使其不覆蓋 h1 的內容
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 90px;
+        height: 2px;
+        background-color: #00b2e3;
+        transform: translateX(100%);
       }
     }
   }

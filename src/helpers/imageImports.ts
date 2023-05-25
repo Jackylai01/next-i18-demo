@@ -1,5 +1,7 @@
 export { default as BAN } from '@public/Img/Activity/Ban2.png';
 export { default as ACTIVITY01 } from '@public/Img/Activity/島嶼市集.jpeg.jpg';
+export { default as ACTIVITY04 } from '@public/Img/Activity/往年頂湖地衣茶席.jpg';
+export { default as ACTIVITY03 } from '@public/Img/Activity/月光海音樂會.jpg';
 export { default as ACTIVITY02 } from '@public/Img/Activity/茂林谷06.jpg';
 export { default as KLOOK } from '@public/Img/Footer/01.Klook客路.png';
 export { default as JET } from '@public/Img/Footer/02.東南旅遊.png';
