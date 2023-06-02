@@ -12,8 +12,8 @@ const MainContent: NextPage = () => {
       <header className='home'>
         <Image
           src={BACKGROUND}
-          layout='fill'
-          objectFit='cover'
+          layout='responsive'
+          objectFit='contain'
           className='home__img'
           alt='2023台灣仲夏旅遊節 Taiwan Summer Tourism Festival'
         />
