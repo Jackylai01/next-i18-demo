@@ -6,7 +6,7 @@
     "link4": "Related Websites"
   },
   "home": {
-    "title": "Midsummer Taiwan",
+    "title": "2023 Taiwan Midsummer Travel Festival: Midsummer Tour Project",
     "description1": "Midsummer is a celebration of the summer solstice, and is an important holiday in Northern Europe. Since 2014, Taiwan has begun to promote summer tourism activities, from the 'Taiwan Summer Solstice 235' in 2014 to the 'Treasure Island Midsummer Festival' in 2019, the characteristics of summer tourism in Taiwan have gradually received attention.",
     "description2": "In response to the changes in the concept and consumption habits of tourists after the epidemic, the Tourism Bureau of the Ministry of Communications continues to promote the purpose of midsummer tourism, reorganize summer tourism resources across Taiwan, reshape the event brand as [Taiwan Midsummer Tourism Festival], and this year's event takes 'refreshing', 'summer heat', 'cooling products' as the event axis, and integrates more than 35 summer special tourism activities in Taiwan's 13 national scenic areas and 14 counties and cities, and cross-industry alliance cooperation"
   },
@@ -47,20 +47,341 @@
   "mainActivity": {
     "spindle": "Main",
     "activity": "Activity",
-    "title": "Island Life Festival 2023",
-    "desc": "Peace Island Geological Park - a secret place in the world, with a sea-erosion landscape that resembles a work of divine craftsmanship. The Island Life Festival is held in mid-summer, with plans including water recreational activities, local concerts, island markets, local short trips, immersive experiences, and more. These activities connect local culture and specialties, promoting maritime tourism and sustainable travel in the Keelung and Peace Island areas. With 'sustainable development and ocean healing' as the main marketing highlights, we aim to boost the local brand's tourism value. Those who yearn for beautiful coastlines need not go abroad; the rare and magnificent coastal charm can be enjoyed right on the North Coast.",
-    "title01": "Fun Tour in Maolin - Cool Ice-Tasting",
-    "desc01": "This event is for operators in the Kaohsiung tourism circle (including Taiwan Good Travel, Taiwan Tour Bus operators). When customers spend up to a certain amount, they will receive summer benefits (gifts or discount coupons, such as ice product coupons, cool fans, cooling towels). You can exchange for ice products and drinks such as high mountain Aiyu, banana shaved ice, fruit juice, and mountain tea.",
-    "desc02": "Flash gathering events, over 20 exchange merchants, related promotional materials (stand-up signs at each store and our service desk), posters sent for promotion in each store, etc.",
-    "desc03": "The flash gathering event is expected to be held at the Kaohsiung Far Eastern Department Store, with 15 to 20 stalls from the Kaohsiung tourism circle participating. Stalls will offer items such as Aiyu, Frosty QiMu, and native mountain tea.",
-    "title02": "Alishan Four Seasons Tea Journey - Summer Tea Party",
-    "desc04": "In recent years, Alishan has been committed to promoting thematic tourism, especially tea-related travel. By combining Alishan's tea industry and tourism, we are switching up the style of the Four Seasons Tea Party event this year to cater to more diverse groups. We hope that all different needs can be satisfied when people visit Alishan, and that the various industries in Alishan can develop further through this promotion.",
-    "desc05": "The Alishan Four Seasons Tea Journey holds four tea parties in spring, summer, autumn, and winter, each in a lively and engaging manner to attract tourists from different groups to the Alishan tea tourism.",
-    "desc06": "The Alishan Four Seasons Tea Journey is scheduled to host the Spring Tea Music Festival on April 22 (Saturday) and 23 (Sunday), the Summer Tea Picnic Day on July 22 (Saturday), the Autumn Mountain-viewing Tea Journey and Forest Tea Journey on September 9 (Saturday), and the Winter Root-seeking Tea Journey on November 25 (Saturday).",
-    "desc07": "With the scent of tea and the landscape of Alishan in all four seasons, taste the tea soup from different seasons in Alishan and experience a diverse, delicate, and in-depth tea journey.",
-    "title03": "2023 East Coast Land Art Festival and Moonlight Sea Concert",
-    "desc08": "Taiwan's East Coast is expansive and captivating, sometimes beautiful, sometimes wild, sometimes mysterious, sometimes outgoing. The people living here are quiet and natural, simple and free. Artists find their souls here and immerse their senses in their creations. An installation art piece reflecting the seascape or a piece of music that touches the heart, all coexist in the East Coast Land Art Festival (TEC LandArt Festival).",
-    "desc09": "The East Coast Land Art Festival, hosted by the East Coast National Scenic Area Administration since 2015, is an art festival centered on themes of natural environment, tribal life, dwelling, and adventurous travels.",
-    "desc10": "The event includes 'Residency Creation' which invites artists from home and abroad to create art works on the East Coast, 'Art Life Platform' which connects various art spaces, 'Moonlight Music Concert and Creative Market', where the moonlight sparkles and performers perform, along with local flavor markets. It's a summer art feast, inviting travelers to experience the charming East Coast."
+    "title": "SEA you there",
+    "desc": " Heping Island Park--the secret of the world, a geological landscape with stunning natural created sea erosion, “SEA you there” held in the midsummer season, planning including water recreation activities, local concerts, island markets, local excursions, immersive experiences, etc., a series of activities linking such as local culture, local specialties, to promote Heping Island area, Keelung marine tourism and sustainable tourism, and make sustainable Development, Ocean Healing as the main marketing highlights, enhance the local brand tourism output value, and aspire to the beautiful coast that does not have to go far abroad, but in the North Coast there is the  enjoyable, rare and beautiful coastal style.",
+    "title01": "Have Fun in Maolin.",
+    "desc01": "This event takes Kaohsiung sightseeing district regional industries (including Taiwan Tourist Shuttle, a Taiwan tourist bus operator) as the scope, and introduces a cool summer discount (can be a gift or discount coupon, such as: ice coupon, cool fan, cool towel); redeemed for ice food and drinks, such as high mountain aiyu jelly, banana ice, fruit juice and mountain tea.",
+    "desc02": "Pop-up collector activity, more than 20 stores to redeem, relevant promotional materials (desktop stand for each store and our service counter), posters advertised in each store, printing and delivering. ",
+    "desc03": "Pop-up collector activity is expected to be held in Kaohsiung FE21' MEGA FEDS, and 15 to 20 stalls of the Kaohsiung Tourism district is expected to be invited to participate (the contents of the stalls include aiyu jelly, ice cream, native mountain tea and other summer drinks).",
+    "title02": "Alishan Tea Festival In Four Seasons—Summer Tea Festival",
+    "desc04": "In particular, the Alishan Tea Festival in Four Seasons held four tea parties in spring, summer, autumn and winter in different forms, attracting tourists of different ethnic groups to visit Alishan's tea tour in a lively way. ",
+    "desc05": "Alishan Tea Festival in Four Seasons is expected to hold a spring tea country concert on April 22 (Saturday) and 23 (Sunday), a summer tea-style picnic day on July 22 (Saturday), an autumn mountain-watching tea tour and a forest-farewell tea tour on September 9 (Saturday), and a winter origin-seeking tea tour on November 25 (Saturday).",
+    "desc06": "Taste the tea soup of Alishan in different seasons and experience the diversity, sophistication and depth of tea travel with the tea fragrance and the landscape of Alishan.",
+    "title03": "Taiwan East Coast Land Arts Festival & Moonlight Sea Concert",
+    "desc08": "The East Coast of Taiwan is magnificent and charming, sometimes beautiful and sometimes wild, sometimes mysterious and sometimes exotic. The people who live in it are silent and natural, simple and free. The artists find their souls here and immerse their five senses in the creation. The scene and the installation artwork of the sea, or a piece of music written into the heart, all coexist in the TEC LandArt Festival. ",
+    "desc09": "The TEC LandArt Festival is an art festival organized by the East Coast National Scenic Area, Tourism Bureau, Ministry of Transport and Communication since 2015, which brings together the themes of the natural environment, tribal life, habitat and travel. ",
+    "desc10": "The event includes “Residency Creation”, inviting artists at home and abroad to create artworks on the East Coast, “Art Life Platform”, linking together large and small artistic and cultural spaces, “Moonlight Sea Concert and Creative Arts Market”, shining under the moon, accompanied by artists' performances, and a local flavor market, a summer artistic and literary feast inviting guests to experience this fascinating East Coast."
+  },
+  "midsummer": {
+    "title": "2023 Taiwan Midsummer Tourism Festival: Midsummer Tour Program",
+    "desc": "The 2023 Taiwan Midsummer Travel Festival presents the special Midsummer Tour Bus that will travel across the northern, central, southern, and eastern regions of Taiwan. It is divided into sections highlighting refreshing coolness and cool products to promote. It connects various features such as family, music, ocean, cool food, art, and tourism, creating a unique impression of Taiwan's midsummer.",
+    "desc01": "We select representative events characteristic of summer or those attracting crowds. Alongside these events, we create a unique midsummer activity zone to stimulate local industry development, ensuring surprises at every stop!",
+    "title01": "Cool",
+    "list01": "2023 Island Life Festival (2023/07/15)",
+    "list02": "2023 Yilan International Children's Art Festival",
+    "list03": "2023 Island Life Festival (2023/07/15)",
+    "list04": "2023 Northeast Cape Fulong Life Festival",
+    "title02": "Beat the Heat",
+    "list05": "2023 Hsinchu City International Kite Festival",
+    "list06": "Guangfu New Village Light Festival",
+    "list07": "2023 Nantou Star Season (2023/07/08)",
+    "list08": "2023 Salt Field - Feast (2023/08/12)",
+    "list09": "Alishan Four Seasons Tea Journey - Summer Tea Party (2023/07/22)",
+    "list10": "2023 Checheng Antique Music Festival (2023/08/05, 06)",
+    "list11": "2023 East Coast Land Art Festival and Moonlight Sea Concert",
+    "title03": "Desserts",
+    "list12": "2023 Shanli Ice Dessert Festival (2023/07/28)",
+    "list13": "Fun Tour Maolin - Cool Ice Dessert Tasting (2023/07/01)"
+  },
+  "footer": {
+    "title": "Partner",
+    "lable": "Management Unit: Ministry of Transportation and Communications Tourism Bureau, Republic of China (Taiwan)",
+    "address": "Address: 9th Floor, No. 290, Section 4, Zhongxiao East Road, Da'an District, Taipei City, 10694, TaiwanService Phone: 02-2349-1500",
+    "copyright": "All Rights Reserved. Copyright © 2023 Ministry of Transportation and Communications Tourism Bureau, Republic of China (Taiwan)."
+  },
+  "regions": {
+    "north": "Northern region",
+    "middle": "Central region",
+    "south": "Southern region",
+    "east": "Eastern region",
+    "islands": "Island region"
+  },
+  "activities": {
+    "2023大稻埕夏日節": {
+      "title": "2023 Dadaocheng Summer Festival",
+      "organizer": "Department of Information and Tourism, Taipei City Government",
+      "location": "Dadaocheng Wharf,  Yanping Riverside Park",
+      "time": "2023-07-01 ~ 2023-08-20",
+      "description": "This year's newly planned, the 'Dadaocheng Summer' Festival,will integrate the original summer activities such as Dadaocheng Valentine's Day, Taipei Riverside Children's Fun Carnival, etc., plan innovative and different themed strip-like events, paired with decoration cruise ships, wonderful fireworks shows, cuisine, summer drinks, etc., and cooperate with local commercial areas to launch exclusive special activities to build the most representative summer events in Taiwan.",
+      "link": ""
+    },
+    "2023新北市河海音樂季": {
+      "title": "New Taipei City River and Ocean Music Festival—Tamsui Fisherman Stage",
+      "organizer": "New Taipei City Government",
+      "location": "Tamsui Fisherman's Wharf,  New Taipei Metropolitan Park",
+      "time": "Coming Soon",
+      "description": "In order to deepen the power of the New Taipei City Government to support independent music creation, this project hopes to expand the holding of the river and sea music season through the combination of the 'Tamsui Fisherman Stage' and the 'Metropolitan Stage', deepen the development of independent music, and make it a large-scale original music creation base for independent bands. Through the new tourism elements of original music creation flowing into the upper, middle and lower steams of the Tamsui River, with the original scenes of sunset, seascape and riversf-side of Tamsui, making it a new river culture in the Greater Taipei Area, creating a new impression of the Fisherman's Wharf and the New Taipei Metropolitan Park, in order to increase the time of stay and the willingness of tourists to visit again.",
+      "link": ""
+    },
+    "愛戀基隆夜 光影節尋寶": {
+      "title": "Love Summer Night in Keelung, Light Festival",
+      "organizer": "Department of Tourism and City Marketing, Keelung City Government",
+      "location": "Keelung City",
+      "time": "2023-08-01~2023-09-30",
+      "description": "In order to promote the balanced development of tourism and the region in Keelung City, it is expected that the '2023 Love Summer Night in Keelung, Light Festival' will be held during the summer vacation from July 1 to August 31, 2023, and the light festival installations will be set in the seven administrative districts of Keelung City to present 'light works' and 'urban landscape spotlight arcade'. The event will create an IP story with a childish and harmonious feeling, and create a distinctive and happy brand image through cartoon personification and combining local elements. On the day of opening, a lighted music market will be held at the color-painted houses of the Zhengbin Fishing Harbor to promote Keelung's local good products. Setting up QR codes in the seven exhibition zones, the event presents story IP content through scanning and conducts a collection stamps luck drawing to connect the highlights of the seven districts, featured restaurants and stylish stores to market the city's diverse charm.",
+      "link": ""
+    },
+    "2023島嶼生活節": {
+      "title": "Sea You There",
+      "organizer": "North Coast & Guanyinshan National Scenic Area Administration",
+      "location": "Heping Island Geopark, Heping Island",
+      "time": "2023-07-16 ~ 2023-09-30",
+      "description": "Heping Island Park--the secret of the world, a geological landscape with stunning natural created sea erosion, “Long Time no SEA” held in the midsummer season, planning including water recreation activities, local concerts, island markets, local excursions, immersive experiences, etc., a series of activities linking such as local culture, local specialties, to promote Heping Island area, Keelung marine tourism and sustainable tourism, and make 'sustainable Development, Ocean Healing' as the main marketing highlights, enhance the local brand tourism output value, and aspire to the beautiful coast that does not have to go far abroad, but in the North Coast there is the enjoyable, rare and beautiful coastal style.",
+      "link": ""
+    },
+    "2023宜蘭國際童玩藝術節": {
+      "title": "International Children's Folklore & Folkgame Festival, Yilan",
+      "organizer": "Yilan County Government",
+      "location": "Dongshan River Water Park, Yilan County",
+      "time": "2023-07-01 ~ 2023-08-13",
+      "description": "The 2023 Yilan International Children's Folklore & Folkgame Festival, with the theme 'Children's Folklore & Folkgame  Metaverse', integrates elements such as adventure, technology and metaverse into the four main pillars of 'games', 'exhibitions', 'performances' and 'exchanges'.[Game] Added to this year's the more exciting high-altitude resort facilities; the waters have a large number of resort facilities across the pool.[Exhibition] The theme pavilion plans interactive immersive scenes, VR adventure experiences, so that visitors can feel the innovative children's folklore & folkgames supported by technology.[Performance] Folk groups from all over the world bring folk music, dance and ballads from different countries. Coupled with performances such as folk artists parades and night light shows, etc., which are marvelous from morning to night. [Exchange] 'National Day' allows foreign artist groups to get close to the audiences, and arranges for local cultural centers to serve as friendship ambassadors to let members know Yilan and fall in love with Taiwan.This summer, we invite friends of adults and children from all over the country to enter the 'Children's Folklore & Folkgame Metaverse' and explore the vast new world of children's folklore & folkgame.",
+      "link": ""
+    },
+    "2023世界客家博覽會": {
+      "title": "2023 HAKKA EXPO",
+      "organizer": "Department of Tourism, Taoyuan City Government",
+      "location": "World Pavilion, Taiwan Pavilion, Hengshan Calligraphy Art Center, 1895 War Memorial Park, Yongan Conch Cultural Experience Park",
+      "time": "2023-08-11 ~ 2023-10-15",
+      "description": "Show the diverse aspects of the world's Hakka family, and further open up the inheritance and innovation of Hakka culture. The Expo has a total of ten main exhibition halls, including the World Pavilion, Taiwan Pavilion, Hengshan Calligraphy Art Center, Memorial Park Commemorating Resistance of the 1895 Japanese Invasion, Yongan Conch Cultural Experience Park, etc., echoing the main theme of the event, 'Travel to Tomorrow', with diversity, local, rooted, common prosperity as the curation planning, combined with different regions of the Hakka culture, history, industry and other topics, showcasing the past of the Hakka culture and the spiritual significance of sailing to the future.  In order to encourage people to participate in the World's Hakka Expo and experience local featured tours, it will combine world Hakka bloggers, exhibition halls and extensive attractions, recreational farms, tourism factories, featured stores, experiences and other planned tours to provide visitors with diversified tourism options.",
+      "link": ""
+    },
+    "2023竹北市白色戀人海洋三部曲": {
+      "title": "Zhubei City Office Cultural Tourism Section, Hsinchu County",
+      "organizer": "Zhubei City Office Cultural Tourism Section, Hsinchu County",
+      "location": "New Moon Beach, Zhubei City",
+      "time": "2023-08-18 ~ 2023-08-20",
+      "description": "The '2023 White Lovers Ocean Trilogy' is planned to transform the elements of New Moon Beach into art, conduct curation and package related events. Give new life to New Moon Beach through 'Part I: Dawn of Light' and let the people participate in beach cleanup activities to protect the ocean together; 'Part II: Artistic Pass-down Reproduction' with the ancient fishing technology── Taiwanese Beach Seine, a cultural experience activity to promote marine education. 'Part III: The New Life of the New Moon” art establishes the cultural brand of “New Moon Beach in Zhubei City” and builds a local style. In order to revitalize the tourism and recreation related industries around Hsinchu Fishing Harbor, the government, combining with the strong winds of Hsinchu and other characteristics, held the Hsinchu International Kite Festival at the end of August and the beginning of September every year, inviting everyone to celebrate.",
+      "link": ""
+    },
+    "2023新竹市國際風箏節": {
+      "title": "2023 Hsinchu City International Kite Festival",
+      "organizer": "Hsinchu City Government",
+      "location": "Hsinchu Fish Harbor International Kite-flying Competition Venue",
+      "time": "Coming Soon",
+      "description": "Hsinchu has an area of 8 hectares of grassland. It is the largest and most professional kite flying field in the country. Various performances, such as stunt kites, theme kites, and night light kites, can be enjoyed at the Kite Festival. The performances will also be interspersed with various artistic and cultural activities, such as theaters or parent-child interactive performances, and band performances. In addition, in order to increase the sense of participation of the public, kite-painting DIY activities, parent-child fun-fishing activities, etc., will be arranged to allow the public to have more handmade opportunities. If you want to experience the spectacular scenery of dozens of kites flying in the sky, the Hsinchu International Kite Festival will be a great choice!",
+      "link": ""
+    },
+    "2023東北角福隆生活節": {
+      "title": "2023 Northeast Coast Fulong Life Festival",
+      "organizer": "Northeast and Yilan Coast National Scenic Area",
+      "location": "Fulong Beach, Gongliao District, New Taipei City",
+      "time": "2023-06-09 ~ 2023-10-31",
+      "description": "With the Fulong area as the center, the Fulong Life Festival combines the natural scenery, humanistic life and industrial characteristics of Fulong in a series of bicycle tours to create grassland concerts, local markets, and biking, leading tourists to experience Fulong's local life charm at a slow pace, in-depth travel experience the charm of Fulong's local life.The event will be held from June 9 to October 31, 2023, and will continue to promote the popular 'Northeast Cape Mountain and Sea Riding Chill - Biking Series Excursion' single day trip, including Old Grass Mountain Ring Rute Bicycle Trail', feel the old Grass Mountain tunnel centennial history and Mao-ao Fishing Village featured DIY; as well as 'Gongliao Shuangxi Towns Settlement Story' in the past Danlan Historic Trail and Shuangxi Old Street humanistic history. In addition to the '2023 Fulong International Sand Sculpture Art Festival', a series of themed activities, including 'Enjoying Meal' Time—Lawn Music Festival', 'Chasing Sea Wind—Kite Festival Activity' and 'Starry Sky Arts Village X Cultural and Creative Market', were launched during the event, which integrated bicycle travel, Fulong Sand Sculpture, lawn music festival, cultural and creative market and exhibition activities to create the exclusive Fulong Summer Festival Events.",
+      "link": ""
+    },
+    "2023光復新村光影節活動": {
+      "title": "2023 Guangfu New Village Light Festival Activity",
+      "organizer": "Labor Affairs Bureau, Taichung City Government",
+      "location": "Guangfu New Village Youth Entrepreneurship Base",
+      "time": "2023-07-01 ~ 2023-08-27",
+      "description": "'Guangfu New Village' is located in Wufong District, Taichung City. In the early days, it served as a dormitory for the dependents of provincial government employees who had been sent to Taiwan by the Government of the Republic of China. It was the first new town in Taiwan after World War II. It has special significance in the history of urban architecture in Taiwan. Time passed, and the once crowded people in Guangfu New Village gradually left, leaving the old houses that were dying. In conjunction with the summer program, the main business hours of entrepreneurial youth are 5:00 p.m. and extended to 10:00 p.m., creating an impression of Guangfu New Village that is different from the daytime and welcoming people to seize the opportunity to visit Guangfu New Village at night! ",
+      "link": ""
+    },
+    "「彰濱~海FUN一夏」慶安水樂園": {
+      "title": "2023 Zhangbin ~ Sea Fun Summer @Qing'an Water Park",
+      "organizer": "Changhua County Government",
+      "location": "Changhua County Natural Ecology Education Center",
+      "time": "2023-07-01 ~ 2023-08-20",
+      "description": "In order to provide people with the pleasure of enjoying the water in the hot summer, during the current (2023) summer vacation, the 'Zhangbin ~ Sea Fun Summer' Qing'an Water Park activities, combined with the most popular SUP, canoe and water bicycle, etc., water experiences, as well as marine markets, children's air cushion facilities and experience games on land, are waiting for you to experience many wonderful activities.",
+      "link": ""
+    },
+    "2023南投星空季": {
+      "title": "2023 Nantou Starry Night Festival",
+      "organizer": "Nantou County Government",
+      "location": "Ren'ai Township, Xinyi Township, Lugu Township, Nantou County",
+      "time": "2023-06-27 10pm-12am Tea Party at Xinyi Township: 2023-07-01 17pm-20pm Concert at Lugu  Kirin Lake: 2023-07-08 17-20pm Concert at Ching Jing Elementary School: 2023-07-22 17pm-20pmMoonlight Picnic at Ren'ai Township Cingjing Skywalk: 2023-09-30 17pm-20pm",
+      "description": "Nantou County has many wonderful scenery and natural environments, Hehuan Mountain Dark Sky Park is the third in Asia and the first internationally certified dark sky park in Taiwan. The Nantou Starry Sky Season, held since 2019, is to promote Nantou's most distinctive stargazing tourism.  In Hehuan Mountain, as long as you have a mobile phone, you can easily shoot the stars shining. As long as you look up, you can see the magnificent galaxy extending for thousands of miles. In order to promote astronomy education, promote stargazing tourism, and develop the starry sky industry chain, the Nantou County Government held the '2023 Nantou Starry Sky Season' from July 1 to September 30, 2023, which included four theme activities such as a starry sky theme concert, a featured tea table experience evening, a picnic moon appreciation evening, and a starry sky tour guide talent training courses.",
+      "link": ""
+    },
+    "2023雲西海洋音樂祭": {
+      "title": "2023 Yunlin Ocean Music Festival",
+      "organizer": "Department of Cultural Affairs and Tourism, Yunlin County Government      ",
+      "location": "Santiaolun Beach Water Park, Sihu Township, Yunlin County",
+      "time": "Coming Soon",
+      "description": "In order to promote the rich resources of Yunlin Coast Line Tourism, the Yunlin County Government organizes the Yunlin Ocean Music Festival every July to August, gathering live performances of popular music casts, and planning various activities such as cool resorts, fun Yunxi, and beach volleyball games so that people can experience the depth of Yunxi Coast Line Tourism.LOHAS slow travel, people are specially included in the activities of reducing plasticity, loving the sea and joining hands for the beach cleanup, hoping by their participation will raise people's awareness of protecting the environment through action. At the same time, during the event gathering Yunlin special products, and summer markets were held in linking with coastal areas, integrating the marketing of excellent products of Yunlin agricultural, fishery and farming specialties, and shaping the cultural tourism industry full of ‘Yunlin flavor’.  ",
+      "link": ""
+    },
+    "2023參山呷涼節": {
+      "title": "2023 Tri-Mountain Ice Eating Festival",
+      "organizer": "Tri-Mountain National Scenic Area",
+      "location": "Nanjhuang Tourist Center, Lion' s Head Mountain Visitor Center, Guguan Visitor Center, Lishan Visitor Center, Bagua Mountain Ecosystems Visitors Center, Songboling Visitor Center",
+      "time": "2023-07-29~2023-09-03",
+      "description": "Dance a lively ice-eating dance and share a message in a designated post tag @ two friends, you can eat the featured ice popsicles on each site of Tri-Mountain.",
+      "link": ""
+    },
+    "112年苗栗慢魚海岸海洋風場休閒觀光產業計畫": {
+      "title": "2023 Miaoli Slow Fish Coast Ocean Wind Farm Leisure Sightseeing",
+      "organizer": "Culture and Tourism Bureau, Miaoli County",
+      "location": "Miaoli Slow Fish Coast",
+      "time": "Coming soon",
+      "description": "Coming soon",
+      "link": ""
+    },
+
+    "2023東石海之夏": {
+      "title": "2023 Dongshi Summer Festival",
+      "organizer": "Chiayi County Government",
+      "location": "Dongshi Fisherman's Wharf",
+      "time": "Coming Soon",
+      "description": "Event Details ‘Dongshih Summer Festival’ is an indicator of Chiayi County's summer coastal tourism. It is expected to promote the image of Chiayi County's summer marine tourism brand, revitalize Chiayi coastal tourism, and enhance the tourism revenue of related industries around the event with activities such as pop music evenings, special markets, and parent-child resorts.",
+      "link": ""
+    },
+    "2023臺南夏日音樂節-將軍吼": {
+      "title": "2023 Tainan Summer Music Festival— Jiangjun's Roar",
+      "organizer": "Tourism Marketing Section, Bureau of Tourism, Tainan City Government ",
+      "location": "Jiangjun Fishing Harbor, Jiangjun District, Tainan City",
+      "time": "Coming soon",
+      "description": "‘Tainan Summer Music Festival’ is held every year during the summer vacation in July and August for one-week period and two days in Jiangjun Fishing Harbor. The concert invites singers, groups and bands to take turns performing, along with the fireworks show. This event this year is about to enter its 12th year. Combining popular music and local characteristics, it successfully creates a musical activity with local industry and culture on the west coast of Tainan. With music, seafood, and small trips, it leads young friends and tourists to explore Tainan's local scenery and presents a unique ocean music event with west-coast characteristics. It hopes to promote the activities of local industries and tourism activities on the west coast of Tainan.",
+      "link": ""
+    },
+    "2023旗津風箏節": {
+      "title": "2023 Cijin Kite Festival",
+      "organizer": "Tourism Bureau, Kaohsiung City Government",
+      "location": "Cijin Seaside Park",
+      "time": "Coming soon",
+      "description": "The land of Qijin Coast is flat and open, the view is unobstructed, the wind is stable, and it has the charm of Kaohsiung's unique coast and the depth of culture. In order to let more people experience the charm of Qijin's summer sea, this year (2023) will hold kite festival activities in the summer, inviting professional kite teams to use kite flying skills to perform kite art works, so that the large-scale power kites, modeling kites, etc., will crowd the Qijin coastal sky, as well as DIY parent-child fun and night stay activities, welcoming people to Kaohsiung to experience the charm of the summer sea.",
+      "link": ""
+    },
+    "2023屏東黑鮪魚文化觀光季": {
+      "title": "2023 Pingtung Bluefin Tuna Cultural Festival",
+      "organizer": "Pingtung County Government",
+      "location": "Donggang Township, Pingtung County",
+      "time": "2023-05-06 ~ 2023-07-02",
+      "description": "During the event, there are modeling toy capsule vending machines and limited tuna yaki in the Donggang ferry waiting room. In addition, the toy capsule vending machines are coupled with this year's souvenir 4 'Donggang Soundscape Key Ring'. As long as the mobile phone is placed on the key ring, the mobile phone will have 4 different themed ringtones (deep sea, capture, sharing, culture). In addition, on June 10, there will be a food promotion banquet, launching 10 dishes made with local fresh ingredients, and inviting artists to perform in the style of the cabaret show. During the event, a famous seafood street, Goungfu Road, in Donggang Town, arranged a light installation of artworks to create a lively atmosphere of the bluefin tuna season. ",
+      "link": ""
+    },
+    "2023關子嶺夏日山車祭": {
+      "title": "2023 Guanziling Summer Mountain Bike Festival",
+      "organizer": "Siraya National Scenic Area Administration",
+      "location": "Guanziling Hot Spring Area, Baihe District, Tainan City",
+      "time": "023-07-22 ~ 2023-08-13",
+      "description": "The annual Dashi and Yatai Event is held on the 1st day of the week on the birthday of Miyowa (June 24th of the lunar calendar). Through the Dashi and Yatai Event, we pray for the blessing of the locals and pray that the performance will flourish, and the source of profit will be endless! For one of the activities that must be attended in Guanziling every year, in addition to the group that arranges common progress when the Festival Floats are pulled, the element of ice is added to the supply stations, combined with Yujing mango ice and Bihe lotus seed ice popsicle, to jointly market and promote the summer ice products in the area. Guanziling summer Dashi and Yatai Event main themes are cooling, cool-off, and activities from July 22 to August 13, a one-month weekend holiday, combined with the holiday market, music salon, but also in this year for the first time launched singing Nagashi, so that tourists can enjoy food at the same time can also watch unique style of Nagashi singing, so that one of the highlights is different from the previous feelings.",
+      "link": ""
+    },
+    "阿里山四季茶旅－夏季茶會": {
+      "title": "2023 Alishan Tea Festival In Four Seasons—Summer Tea Festival",
+      "organizer": "Alishan National Scenic Area Administration",
+      "location": "Dinghu Eco Park",
+      "time": "2023-07-22",
+      "description": "In particular, the Alishan Tea Festival in Four Seasons held four tea parties in spring, summer, autumn and winter in different forms, attracting tourists of different ethnic groups to visit Alishan's tea tour in a lively way. Alishan Tea Festival in Four Seasons is expected to hold a spring tea country concert on April 22 (Saturday) and 23 (Sunday), a summer tea-style picnic day on July 22 (Saturday), an autumn mountain-watching tea tour and a forest-farewell tea tour on September 9 (Saturday), and a winter origin-seeking tea tour on November 25 (Saturday). Taste the tea soup of Alishan in different seasons and experience the diversity, sophistication and depth of tea travel with the tea fragrance and the landscape of Alishan. ",
+      "link": ""
+    },
+    "2023車埕古玩音樂節": {
+      "title": "2023 Checheng Antique Music Festival",
+      "organizer": "Sun Moon Lake National Scenic Area Administration",
+      "location": "Around Checheng Visitor Center",
+      "time": "2023-08-05 ~ 2023-08-06",
+      "description": "'2023 Checheng Antique Music Festival', with the geographical environment, history and humanities, and industry of 'Checheng' as the background, plans a series of creative fun activities, such as wooden antique children’s toys, earth-oriented stage clearance activities, creative summer cool food and drinks, music markets and other diverse elements.  In the hot summer days, the domestic tourists come to the small town of Checheng, strolling into charming mountain scenery, visiting culture, tasting the special cool (ice) food and drinks of the Greater Sun Moon Lake area, listening to light music, experiencing wooden ancient children's toys and games, etc., to create summer activities that can be participated in by all ages. We welcome friends of adults and children to come to Checheng for a relaxing summer and enjoy the summer time. ",
+      "link": ""
+    },
+    "2023鹽田-饗樂": {
+      "title": "2023 Salt Field—Feast & Fun",
+      "organizer": "Southwest Coast National Scenic Area Administration",
+      "location": "Jing Zhai Jiao Tile Paved Salt Fields, Beimen District, Tainan City",
+      "time": "2023-07-22 ~ 08-12 performances every Friday and Saturday",
+      "description": "Built in 1818 AD, the Jing Zhai Jiao Tile Paved Salt Fields in Beimen District of Tainan carry the history of the salting of the southwest coast of Taiwan. After stopping salting operations and abandoning the salting, they were transformed into sightseeing salt fields through the efforts of a lot of people, and continued to produce salt. The salt produced is Taiwan's unique solar salt. The tile paved salt fields are also the only remaining continuously operating tile paved salt fields in Taiwan. As famous as that, the beautiful sunset view at Jing Zhai Jiao Tile Paved Salt Fields also won the 2021 'marketing - tourism photography' gold award, the event takes the salt field as the stage, the evening performance with the sunset beauty, brings the audience a different feeling. The event is expected to invite Tainan local or well-known performing arts groups to bring the audience a diverse and rich content, presented in a contextual way, so that the audience can immerse themselves in this unique and beautiful stage and performance.",
+      "link": ""
+    },
+    "Fun遊茂林‧清涼呷冰": {
+      "title": "2023 Have Fun in Maolin ‧ Refreshing & Ice Eating",
+      "organizer": "Maolin National Scenic Area",
+      "location": "Around Maolin National Scenic Area",
+      "time": "2023-Jul.~Sep.",
+      "description": "This event takes Kaohsiung sightseeing district regional industries (including Taiwan Tourist Shuttle, a Taiwan tourist bus operator) as the scope, and introduces a cool summer discount (can be a gift or discount coupon, such as: ice coupon, cool fan, cool towel); redeemed for ice food and drinks, such as high mountain aiyu jelly, banana ice, fruit juice and mountain tea. Pop-up collector activity, more than 20 stores to redeem, relevant promotional materials (desktop stand for each store and our service counter), posters advertised in each store, printing and delivering. Pop-up collector activity is expected to be held in Kaohsiung FE21' MEGA FEDS, and 15 to 20 stalls of the Kaohsiung Tourism district is expected to be invited to participate (the contents of the stalls include aiyu jelly, ice cream, native mountain tea and other summer drinks). ",
+      "link": ""
+    },
+    "2023第八屆海灘貨幣減塑活動": {
+      "title": "8th Beach Currency Plastic Reduction Event 2023",
+      "organizer": "Dapeng Bay National Scenic Area Administration",
+      "location": "Liouciou Township",
+      "time": "July to September, 112th Year (2023), July 1st - Flash Mob Event at Kaohsiung Dream Mall",
+      "description": "Each session includes an educational course called 'What the Turtles Taught Me About Plastics.' Through mechanisms like beach cleaning and beach currency rewards, the event integrates the Taiwan Lao Gu Island Association's reusable utensil borrowing system (including Liou Cup, Gugu Currency, and Drinking Water Map) to promote sustainable tourism development on Xiao Liuqiu Island.",
+      "link": ""
+    },
+    "2023夏至藝術節": {
+      "title": "2023 Summer Theatre Festival",
+      "organizer": "Yunlin County, Chiayi City, Chiayi County, Tainan City",
+      "location": "Please refer to the official website",
+      "time": "2023-06-24 ~ 2023-09-3",
+      "description": "In order to integrate and enhance the artistic and cultural momentum in the Yunlin, Chiayi and Tainan areas, it was proposed in 2016 that the four cultural centers of Yunlin County, Chiayi City, Chiayi County and Xinying District of Tainan City should plan to promote theatre connectivity, focusing on interregional theater cooperation and audience development. In 2016, the ‘Summer Theatre Festival’ was launched, which began to promote the integration of administrative cooperation and artistic and cultural resources between counties and cities, and adopted the concept of regional integration and service value-added, so as to combine artistic and cultural travel with new theater experiences, drive the artistic and cultural momentum between counties and cities, increase the opportunities for people to participate in diverse art performances, and establish the necessity and value of 'Yun-Chia-Chia-Ying VISUAL ART LINK'.",
+      "link": ""
+    },
+    "2023紅面鴨FUN暑假（鯉魚潭森遊會）": {
+      "title": "2023 Red Faced Rubber Duck FUN Summer Vacation (Liyu Lake Forest Tour)",
+      "organizer": "Hualien County Government",
+      "location": "Liyu Lake Scenic Area, Shoufeng Township, Hualien County",
+      "time": "2023-07-15 ~ 2023-08-13",
+      "description": "This year will take 'Liyutan Forest Crossing' as the main theme of the activity, during the day there are lively large-scale installation artwork exhibits, a water dance show and a variety of street performances, in the evening there are wonderful water repertory theater and water dance performances, and in addition, fireworks show performances on holidays; there are other interactive devices and installation artwork by the lake, attracting tourists to take pictures and check-in on social media.",
+      "link": ""
+    },
+    "2023臺灣國際熱氣球嘉年華": {
+      "title": "2023 Taiwan International Balloon Festival",
+      "organizer": "Taitung County Government",
+      "location": "Taitung Luye Highland",
+      "time": "2023-06-30 ~ 2023-08-28",
+      "description": "The Taiwan International Balloon Festival is one of the largest and most representative events of the summer vacation every year, and the '2023 Taiwan International Balloon Festival' will be held from June 30 to August 28 in Luye Highland.The 60-day event includes free-flight hot air balloons, modeling balloon shows, balloon tethering ride, night glow concert series and drone performances, and the world's only “Mazu-shape Balloon” will also be unveiled at this year's event. In addition, there are styling balloons from all over the world in Luye Highland, and combined with the hot air balloon night glow concerts at various attractions in Taitung, this is also a major event that cannot be missed every year. This year there is a drone show scale-ended, from day to night, feel different at the hot air balloon festival! (The following photographs were provided by the Taitung County Government).",
+      "link": ""
+    },
+    "2023東海岸大地藝術節暨月光海音樂會": {
+      "title": "2023 Taiwan East Coast Land Arts Festival & Moonlight Sea Concert",
+      "organizer": "East Coast National Scenic Area",
+      "location": "Along the East Coast; Moonlight Sea Concert—Duli Visitor Center",
+      "time": "2023-06-21&22、 2023-07-03&04、2023-08-01&02、2023-09-01&02",
+      "description": "The East Coast of Taiwan is magnificent and charming, sometimes beautiful and sometimes wild, sometimes mysterious and sometimes exotic. The people who live in it are silent and natural, simple and free. The artists find their souls here and immerse their five senses in the creation. The scene and the installation artwork of the sea, or a piece of music written into the heart, all coexist in the TEC LandArt Festival.The TEC LandArt Festival is an art festival organized by the East Coast National Scenic Area, Tourism Bureau, Ministry of Transport and Communication since 2015, which brings together the themes of the natural environment, tribal life, habitat and travel. The event includes ‘Residency Creation’, inviting artists at home and abroad to create artworks on the East Coast, ‘Art Life Platform’, linking together large and small artistic and cultural spaces, ‘Moonlight Sea Concert and Creative Arts Market’, shining under the moon, accompanied by artists' performances, and a local flavor market, a summer artistic and literary feast inviting guests to experience this fascinating East Coast.",
+      "link": ""
+    },
+    "2023縱谷原遊會-部落食樂園": {
+      "title": "2023 East Rift Valley Festival — Tribal Food Paradise",
+      "organizer": "East Rift Valley National Scenic Area Administration",
+      "location": "Luoshan Visitor Center",
+      "time": "2023-08-26 ~ 2023-08-27",
+      "description": "‘East Rift Valley Festival’ is a combination of tribal experience and marketing East Rift Valley aboriginal diverse cuisine as the main activity, but it is also the first and largest tribal food experience park in the country.Although the East Rift Valley National Scenic Area Administration, Tourism Bureau has promoted the tribal tourism brand 'East Rift Valley Festival' since 2018, attracting tourists with 'tribal food paradise' as the main theme, gathering the tribes cultivated in the past to present the tribal characteristics in the form of a paradise, using diet as a node to contact the tribal culture, from tribal wilderness survival skills to home life, once gathering tribal cuisine, aesthetics, music and characteristic crafts,bringing tourists to know the richness of the East Rift Valley, while allowing the tribes of the East Rift Valley to exchange with each other in the tourism industry.The event gathered more than 20 aboriginal tribes, inviting those in the East Rift Valley area, including Amis, Bunun, Seediq, Taroko and Pinuyumayan to jointly launch 'mountain hunting ground', 'mumu kitchen', 'aesthetician house', 'limited wild banquet', 'valley stage' and 'selection market', and other special theme areas.",
+      "link": ""
+    },
+    "2023澎湖國際海上花火節": {
+      "title": "2023 Penghu International Fireworks Festival",
+      "organizer": "Guanyinting Park, Magong City, Penghu County",
+      "location": "Kinmen County",
+      "time": "2023-04-20 ~ 2023-06-29",
+      "description": "Stage show, 10 minutes drone show, 10 minutes firework show"
+    },
+    "2023金門親子嘉年華": {
+      "title": "2023 Kinmen Family Carniva",
+      "organizer": "Kinmen County Government",
+      "location": "Kinmen County",
+      "time": "2023-07-01 ~ 2023-08-31",
+      "description": "Fun summer vacation ~ rare vacation, worried that children only want to play tablets at home, watching TV? Come with us to the Kinmen! During the summer vacation, the Kinmen County Government launched sightseeing activities with the theme of parent-child experience, inviting collectors to participate, many of which are the most characteristic of the local 'come and be a day oyster farmer','camp shooting experience','handmade sorghum turtle-shaped rice cake', etc., such as experiential activities, the content of the tour is rich, diverse and fun, welcoming parents and children to travel to Kinmen to relax, feel the humanistic style of Kinmen, understand the precious natural resources, and experience the military facilities on the battlefield, leaving unforgettable memories for parents and children's summer vacation.",
+      "link": ""
+    },
+    "2023馬祖莒光定向越野暨夜跑活動": {
+      "title": "2023 Matsu Jinguang Orienteering and Night Run",
+      "organizer": "Department of Transportation and Tourism, Lienchiang County",
+      "location": "Jinguang Township, Lienchiang County ",
+      "time": "2023-10-17",
+      "description": "1.One Starlight Night Run held on October 7, 2023.2.From September 16, 2023 to December 15, 2023, we will conduct 'Oriented Off-road Treasure Hunting Activities' to encourage tourists to visit the Juguang Township in Matzuu, find attractions, and get Matzuu's featured promotional materials.",
+      "link": ""
+    },
+    "2023澎湖追風音樂節": {
+      "title": "Penghu Gold Coast Music Festival",
+      "organizer": "Penghu National Scenic Area Administration Court",
+      "location": "Lintou Beach, Huxi Township, Penghu County",
+      "time": "2023-08-19 ~ 2023-09-30",
+      "description": "Combining the advantages of Lintou and t Aimen’s 'Golden Beach', and unique local humanities characteristics, through themed music performances, featured cuisine (cultural and creative products), parties and experience package tours and other eye-catching activities, to enhance the Penghu Gold Coastline's diversified tourism charm and fever, to create a young tourism brand, thereby revitalizing the local economy, revitalizing the extensive attractions, and creating new opportunities for coast line tourism.",
+      "link": ""
+    },
+    "2023微光馬祖 GO好玩－夏日嘉年華微光音樂會": {
+      "title": "2023 Glimmers in Matsu GO Have Fun",
+      "organizer": "Matsu National Scenic Area Administration",
+      "location": "Matsu Nangan Beihai Recreation Area, Beigan Visitor Centery",
+      "time": "2023-07-22, 2023-08-19",
+      "description": "The sun is gentle, the sea breeze is soft, and with camouflage enthusiasm, we are connecting with high-quality art groups and inviting everyone to Matzu to welcome the mid-summer and travel happily through carnival-style fun performances. Taking the earth as mat under the starry sky, inviting people to enjoy the music with landscape, inviting well-known singer bands to take turns singing, by touching the heart of the good voice, echoing Matzuu's brilliant starry sky and the night light in the sea, stir up with the shining light of the summer night, attracting more ethnic groups to enjoy the precious battlefield historical and cultural assets and the beautiful scenery of the offshore island!",
+      "link": ""
+    },
+    "return": "Return",
+    "related-activities": "Related Websites",
+    "organizer": "Organizer:",
+    "location": "Event Venue:",
+    "time": " Event Date:",
+    "description": "Event Details:"
   }
 }

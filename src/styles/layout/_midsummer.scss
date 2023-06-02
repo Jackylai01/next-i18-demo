@@ -1,0 +1,217 @@
+.midsummer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(255, 255, 0, 0.1);
+
+  &__line {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 3px;
+    height: 80%;
+    background-color: #00b2e3;
+    transform: translateX(-50%);
+    @include pad-under-width() {
+      display: none;
+    }
+  }
+  &__point {
+    position: absolute;
+    bottom: calc(80% - 20px); // 現在將 __point 的位置與 __line 的高度對齊
+    left: calc(50% - 85px); // 左移，使得 __point 在延伸出來的線條的最左側
+    width: 15px;
+    height: 15px;
+    background-color: #00b2e3;
+    border-radius: 50%;
+    transform: translate(-150%, -50%); // 調整以將點位移到線的左邊
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 12px; // 從點的右側延伸出
+      top: 50%; // 讓橫線與點對齊
+      width: 96px;
+      height: 2px;
+      background-color: #00b2e3;
+      transform: translateY(-50%);
+    }
+    @include pad-under-width() {
+      display: none;
+    }
+  }
+  &__subtitle {
+    position: absolute;
+    bottom: 5%; // 根據__line的高度調整此處的百分比
+    left: 5%;
+    width: 20vw;
+    height: auto;
+    transform: translate(-100%, 50%);
+    padding: 1rem;
+    border: 3px solid #0075c9;
+    flex-direction: column;
+    color: #ff9900;
+    font-weight: 600;
+    font-size: 2rem;
+
+    @include pad-under-width() {
+      display: none;
+    }
+  }
+  &__container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    @include pad-under-width() {
+      width: 100%;
+    }
+    @include phone-width() {
+      width: 100%;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ff9900;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      display: block;
+      padding: 0 1rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 90px;
+        height: 2px;
+        background-color: #ff9900;
+        transform: translateX(-110%);
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 90px;
+        height: 2px;
+        background-color: #ff9900;
+        transform: translateX(110%);
+      }
+    }
+  }
+  &__card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+
+    @include pad-under-width() {
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+
+    &--caption {
+      color: #995c01;
+      font-weight: 600;
+      width: 50%;
+      @include pad-under-width() {
+        width: 70%;
+      }
+      @include phone-width() {
+        width: 100%;
+      }
+      > p {
+        line-height: 25px;
+      }
+      @include pad-under-width() {
+        flex: 1 1 100%;
+        padding: 0.5rem 0rem;
+      }
+    }
+  }
+  &__items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    @include phone-width() {
+      justify-content: center;
+    }
+
+    @include pad-under-width() {
+      flex-direction: column;
+    }
+
+    &--img {
+      margin-bottom: 1rem;
+      border-radius: 20px;
+
+      @include pad-under-width() {
+        order: 1;
+        width: 100%;
+      }
+      @include phone-width() {
+        justify-content: center;
+      }
+    }
+
+    &--caption {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      width: 80%;
+      height: 60%;
+      padding: 1rem 2rem;
+      background-color: rgba(194, 194, 194, 0.1);
+      backdrop-filter: blur(1px);
+
+      @include pad-under-width() {
+        order: 2;
+        padding: 0rem;
+        background-color: initial;
+        backdrop-filter: blur(0px);
+      }
+
+      &-content {
+        margin: 2rem 0rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #995c01;
+        line-height: 35px;
+      }
+
+      > h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #995c01;
+
+        @include phone-width() {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

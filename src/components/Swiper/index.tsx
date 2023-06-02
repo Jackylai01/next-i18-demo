@@ -16,7 +16,7 @@ export const Swiper = ({
   duration = 2000,
 }: SwiperProps) => {
   children = React.Children.toArray(children);
-  let numOfDots = children.length - (slidesPerView - 1);
+  const numOfDots = children.length - (slidesPerView - 1);
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isDragStart, setIsDragStart] = useState(false);
@@ -36,7 +36,7 @@ export const Swiper = ({
     e: React.MouseEvent<HTMLElement> | React.TouchEvent<HTMLElement>,
   ) {
     setIsDragStart(true);
-    let prevPageX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+    const prevPageX = 'touches' in e ? e.touches[0].clientX : e.clientX;
     setStart(prevPageX);
     setChange(0);
   }
@@ -45,14 +45,12 @@ export const Swiper = ({
     e: React.MouseEvent<HTMLElement> | React.TouchEvent<HTMLElement>,
   ) {
     if (!isDragStart) return;
-    let positionDiff =
+    const positionDiff =
       'touches' in e ? e.touches[0].clientX - start : e.clientX - start;
     setChange(positionDiff);
   }
 
-  function dragStop(
-    e: React.MouseEvent<HTMLElement> | React.TouchEvent<HTMLElement>,
-  ) {
+  function dragStop() {
     setIsDragStart(false);
     setStart(0);
 
@@ -63,7 +61,7 @@ export const Swiper = ({
     }
   }
   useEffect(() => {
-    let interval = setInterval(() => {
+    const interval = setInterval(() => {
       if (auto) {
         setCurrentSlide((value) => (value < numOfDots - 1 ? value + 1 : 0));
       }
@@ -80,7 +78,7 @@ export const Swiper = ({
 
   return (
     <article
-      className={`swiper ${isDragStart ? 'dragging' : ''}`}
+      className={`swiper ${isDragStart ? 'swiper--dragging' : ''}`}
       onMouseDown={dragStart}
       onMouseMove={dragging}
       onMouseUp={dragStop}
@@ -90,16 +88,18 @@ export const Swiper = ({
       onMouseOver={() => setStopAuto(true)}
       onMouseLeave={() => setStopAuto(false)}
     >
-      <div className='swiper-wrapper' style={{ gap: `${spaceBetween}px` }}>
+      <div className='swiper__wrapper' style={{ gap: `${spaceBetween}px` }}>
         {children.slice(currentSlide, currentSlide + slidesPerView)}
       </div>
 
-      <div className='swiper-pagination'>
+      <div className='swiper__pagination'>
         {Array.from({ length: numOfDots }, (_, index) => (
           <span
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`${index === currentSlide ? 'active' : ''}`}
+            className={`swiper__pagination-dot ${
+              index === currentSlide ? 'swiper__pagination-dot--active' : ''
+            }`}
           />
         ))}
       </div>
@@ -108,5 +108,5 @@ export const Swiper = ({
 };
 
 export const SwiperSlide = ({ children }: { children: ReactNode }) => {
-  return <main className='swiper-slide'>{children}</main>;
+  return <main className='swiper__slide'>{children}</main>;
 };

@@ -1,39 +1,45 @@
 .link {
-  width: 100%;
-  background-color: rgb(255, 224, 200);
+  width: 100vw;
+  height: auto;
+  background-color: rgba(255, 255, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
 
+  @include pad-under-width() {
+    width: 100%;
+  }
+
   &__container {
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 3rem;
+    margin-bottom: 12rem;
+    @include phone-width() {
+      margin-bottom: 15rem;
+    }
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: #003dc9;
     position: relative;
-    text-align: center;
-    h1 {
-      display: inline-block;
-      padding: 0 1rem;
-      > span {
-        padding: 0rem 1rem;
-      }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
       &:before {
         content: '';
         position: absolute;
-        top: 50%;
-        left: 0;
-        width: 90px;
+        top: 60%;
+        left: -5%;
+        width: 30%;
         height: 2px;
         background-color: #00b2e3;
         transform: translateX(-100%);
@@ -41,12 +47,15 @@
       &:after {
         content: '';
         position: absolute;
-        top: 50%;
-        right: 0;
-        width: 90px;
+        top: 60%;
+        right: -5%;
+        width: 30%;
         height: 2px;
         background-color: #00b2e3;
         transform: translateX(100%);
+      }
+      > span {
+        padding: 0rem 1rem;
       }
     }
   }
@@ -65,6 +74,8 @@
       justify-content: center;
       color: white;
       font-weight: 600;
+      margin: 0.5rem;
+
       &-1 {
         width: 190px;
         height: 30px;
@@ -94,33 +105,175 @@
   }
 
   &__card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5rem;
-    width: 70%;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 將區塊平均劃分成兩列 */
+    align-items: flex-start;
+    padding: 6rem;
+    grid-auto-flow: dense;
+    :first-child {
+      grid-column: 1;
+    }
+    @include pad-under-width() {
+      grid-template-columns: 1fr;
+      justify-content: center;
 
-    ul {
+      :first-child {
+        grid-column: 2;
+      }
+    }
+
+    :nth-child(2) {
+      grid-column: 2;
+      max-height: 700px;
+    }
+
+    &--lists {
+      // display: grid;
+      // gap: 5rem;
+      // grid-auto-flow: dense;
+      // grid-auto-rows: min-content;
+      min-width: 800px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-self: start;
+      box-sizing: border-box;
+      margin-top: 2rem;
+      background-color: rgba(204, 204, 204, 0.3);
+      border-radius: 12px;
+      padding: 10rem;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 
-      span {
-        display: flex;
-        justify-content: space-between;
+      @include pad-under-width() {
+        margin: 5rem 1rem;
+        width: 90vw;
         align-items: center;
-        width: 100%;
-        margin-bottom: 2rem;
-        background-color: #489a41;
-        padding: 0.5rem 1rem;
+      }
+
+      > li {
+        min-width: 500px;
         cursor: pointer;
+        list-style-type: none;
+        background-color: rgba(72, 154, 65, 0.7);
+        border-radius: 50px;
+        text-align: center;
+        padding: 1rem 2rem;
         color: white;
+        margin: 0.5rem 0rem;
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Noto Sans TC', sans-serif;
+        &:hover {
+          color: rgb(255, 132, 98);
+        }
+        &:before {
+          content: '•';
+          color: white;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+        @include phone-width() {
+          min-width: 300px;
+          font-size: 0.5rem;
+          padding: 1rem;
+        }
+      }
+      @include pad-under-width() {
+        min-width: 200px;
+        padding: 0rem 1rem;
+      }
+    }
+
+    &--images {
+      grid-row: 1;
+      grid-column: 1 / span 2;
+    }
+
+    &--box {
+      width: 80%;
+      margin-top: 3rem;
+      // background-color: rgb(72, 154, 65, 0.4);
+      // padding: 2rem 4rem;
+      // margin: 2rem;
+
+      > h2 {
+        font-size: 1.5rem;
         font-weight: 600;
-        > h2 {
-          margin-right: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      @include pad-under-width() {
+        width: 80vw;
+        grid-row: 2;
+        justify-content: center;
+      }
+
+      @include phone-width() {
+        width: 90vw;
+      }
+
+      &-img {
+        max-width: 100%;
+        height: auto;
+
+        @include phone-width() {
+          max-width: 100vw;
+        }
+      }
+      &-list {
+        width: 100%;
+        line-height: 25px;
+
+        > p {
+          font-size: 1rem;
+          font-family: 'Noto Sans TC', sans-serif;
+          padding: 1rem;
+          @include phone-width() {
+            font-size: 0.8rem;
+          }
+          @include phone-width() {
+            font-size: 0.5rem;
+          }
         }
       }
     }
   }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+
+    @include pad-under-width() {
+      flex-direction: column;
+    }
+  }
+  &__external {
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Noto Sans TC', sans-serif;
+
+    &--green {
+      background-color: rgba(72, 154, 65, 0.9);
+    }
+    &--red {
+      background-color: rgba(235, 72, 72, 0.9);
+    }
+  }
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
 }

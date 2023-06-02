@@ -1,14 +1,15 @@
 import { Swiper, SwiperSlide } from '@components/Swiper';
-import { images } from '@helpers/imageImports';
-import { NextPage } from 'next';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { useEffect, useState } from 'react';
-import { useLanguage } from 'src/hook/useLanguage';
 
-const Carousel: NextPage = () => {
-  const { t } = useLanguage();
+interface CarouselProps {
+  images: { img: StaticImageData }[];
+  size: { width: string; height: string };
+}
+
+const Carousel: React.FC<CarouselProps> = ({ images, size }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [perView, setPerView] = useState(4);
+  const [, setPerView] = useState(4);
   const [widthOfWindow, setWidthOfWindow] = useState<number | null>(null);
 
   useEffect(() => {
@@ -50,10 +51,10 @@ const Carousel: NextPage = () => {
   }, [widthOfWindow]);
 
   return (
-    <header className='carousel'>
+    <header className='carousel' style={size}>
       <main className='carousel__container'>
         <Swiper slidesPerView={1}>
-          {images.map((data, index) => (
+          {images?.map((data, index) => (
             <SwiperSlide key={index}>
               <section
                 className={`carousel__img ${
@@ -61,17 +62,13 @@ const Carousel: NextPage = () => {
                 }`}
                 onClick={() => setCurrentSlide(index)}
               >
-                <Image src={data.img} alt='' objectFit='cover' layout='fill' />
-                <article className='carousel__desc'>
-                  <h1 className='carousel__desc--title'>
-                    {t(`carousel.title${index + 1}`)}
-                  </h1>
-                  <br />
-                  <br />
-                  <p className='carousel__desc--text'>
-                    {t(`carousel.desc${index + 1}`)}
-                  </p>
-                </article>
+                <Image
+                  src={data.img}
+                  alt='img'
+                  objectFit='cover'
+                  width={1000}
+                  height={500}
+                />
               </section>
             </SwiperSlide>
           ))}

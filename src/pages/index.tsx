@@ -1,8 +1,9 @@
-import Carousel from '@components/Carousel';
+import Banner from '@components/Banner';
 import Footer from '@components/Footer';
 import LinkActivity from '@components/LinkActivity';
-import MainContent from '@components/Main';
 import MainActivity from '@components/MainActivity';
+import MainContent from '@components/MainContent';
+import Midsummer from '@components/Midsummer';
 import NavBar from '@components/Navbar';
 import { GetStaticPropsContext } from 'next';
 import { getI18nProps } from '../helpers/i18n';
@@ -10,14 +11,15 @@ import { getI18nProps } from '../helpers/i18n';
 export default function HomePage() {
   return (
     <>
-      <div style={{ minHeight: '100vh' }}>
+      <article style={{ height: '100vh' }}>
         <NavBar />
         <MainContent />
-      </div>
-      <Carousel />
-      <LinkActivity />
-      <MainActivity />
-      <Footer />
+        <Banner />
+        <LinkActivity />
+        <MainActivity />
+        <Midsummer />
+        <Footer />
+      </article>
     </>
   );
 }

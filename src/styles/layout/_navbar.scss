@@ -1,11 +1,13 @@
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 1;
+
+  z-index: 3;
 
   &-scrolling {
     background-color: rgb(255, 184, 108);
     transition: background-color 0.5s ease-in-out;
+    z-index: 3;
   }
 
   &__container {
@@ -13,13 +15,12 @@
     justify-content: space-between;
     align-items: center;
     margin: 1.5rem 4rem;
-    padding: 0.5rem 0rem;
     border-bottom: 1px solid #0075c9;
   }
 
   &__right-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
   }
@@ -29,13 +30,17 @@
     height: 40px;
     cursor: pointer;
     margin: 0rem 1rem;
+    @include pad-under-width() {
+      width: 143px;
+      height: 30px;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-
+    cursor: pointer;
     @include pad-under-width() {
       position: absolute;
       top: 80px;
@@ -44,7 +49,8 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
+      padding-top: 3rem;
       font-size: 1.5rem;
       font-weight: bold;
       background-color: rgb(247, 158, 125);
@@ -54,6 +60,7 @@
   }
 
   &__item {
+    position: relative;
     padding: 0rem 1rem;
 
     @include pad-under-width() {
@@ -64,6 +71,36 @@
       padding: 6px;
       text-align: center;
       background-color: rgb(247, 158, 125);
+    }
+  }
+  &__item-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    margin-top: 0.4rem;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1.2rem;
+    cursor: pointer;
+    li {
+      padding: 1rem 0rem;
+    }
+    &.open {
+      display: block;
+    }
+    @include pad-under-width() {
+      position: fixed;
+      top: 42%;
+      left: 50%;
+      margin: 0;
+      transform: translate(-50%, 0%);
+      width: 30%;
+    }
+    @include phone-width() {
+      position: fixed;
+      top: 42%;
+      width: 50vw;
     }
   }
 
@@ -84,6 +121,9 @@
     @include pad-under-width() {
       display: flex;
       justify-content: center;
+    }
+    @include phone-width() {
+      font-size: 0.7rem;
     }
   }
 

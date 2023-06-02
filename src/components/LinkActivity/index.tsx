@@ -1,36 +1,105 @@
+import Carousel from '@components/Carousel';
 import {
   EASE,
   FESTIVAL,
   ISLANDS,
-  LINK,
   MIDDLE,
   NORTH,
   SOUTH,
 } from '@helpers/imageImports';
+import {
+  IActivity,
+  activitiesEast,
+  activitiesIslands,
+  activitiesMiddle,
+  activitiesNorth,
+  activitiesSouth,
+} from '@helpers/linkActivityList';
 import { NextPage } from 'next';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useLanguage } from 'src/hook/useLanguage';
 
+const defaultActivity: IActivity = {
+  title: '',
+  organizer: '',
+  location: '',
+  time: '',
+  description: '',
+  link: '',
+  images: [],
+};
+
 const LinkActivity: NextPage = () => {
   const { t } = useLanguage();
   const [selectedRegion, setSelectedRegion] = useState<string>('北部地區');
+  const [selectedActivity, setSelectedActivity] = useState(
+    activitiesNorth['2023大稻埕夏日節'],
+  );
+
+  const [showDetails, setShowDetails] = useState<boolean>(false);
 
   const handleClick = (region: string) => {
     setSelectedRegion(region);
+    setShowDetails(false);
+  };
+
+  const handleClickActivity = (activityName: string) => {
+    let activity: IActivity;
+    switch (selectedRegion) {
+      case '北部地區':
+        activity = activitiesNorth[activityName];
+        break;
+      case '中部地區':
+        activity = activitiesMiddle[activityName];
+        break;
+      case '南部地區':
+        activity = activitiesSouth[activityName];
+        break;
+      case '東部地區':
+        activity = activitiesEast[activityName];
+        break;
+      case '離島地區':
+        activity = activitiesIslands[activityName];
+        break;
+      default:
+        activity = defaultActivity;
+    }
+    setSelectedActivity(activity || defaultActivity);
+    setShowDetails(true);
+  };
+
+  const handleHideDetails = () => {
+    setShowDetails(false);
   };
 
   let selectedImage;
+  let selectedList;
   switch (selectedRegion) {
     case '北部地區':
       selectedImage = (
         <Image
           src={NORTH}
           alt='北部地區'
-          width={450}
-          height={400}
+          width={400}
+          height={350}
           objectFit='cover'
+          layout='responsive'
         />
+      );
+      selectedList = (
+        <>
+          <ul className='link__card--lists'>
+            {Object.keys(activitiesNorth).map((activityName) => (
+              <li
+                onClick={() => handleClickActivity(activityName)}
+                key={activityName}
+              >
+                {t(`activities.${activityName}.title`)}
+              </li>
+            ))}
+          </ul>
+        </>
       );
       break;
     case '中部地區':
@@ -38,10 +107,25 @@ const LinkActivity: NextPage = () => {
         <Image
           src={MIDDLE}
           alt='中部地區'
-          width={450}
-          height={400}
+          width={400}
+          height={350}
           objectFit='cover'
+          layout='responsive'
         />
+      );
+      selectedList = (
+        <>
+          <ul className='link__card--lists'>
+            {Object.keys(activitiesMiddle).map((activityName) => (
+              <li
+                onClick={() => handleClickActivity(activityName)}
+                key={activityName}
+              >
+                {t(`activities.${activityName}.title`)}
+              </li>
+            ))}
+          </ul>
+        </>
       );
       break;
     case '南部地區':
@@ -49,10 +133,25 @@ const LinkActivity: NextPage = () => {
         <Image
           src={SOUTH}
           alt='南部地區'
-          width={450}
-          height={400}
+          width={400}
+          height={350}
           objectFit='cover'
+          layout='responsive'
         />
+      );
+      selectedList = (
+        <>
+          <ul className='link__card--lists'>
+            {Object.keys(activitiesSouth).map((activityName) => (
+              <li
+                onClick={() => handleClickActivity(activityName)}
+                key={activityName}
+              >
+                {t(`activities.${activityName}.title`)}
+              </li>
+            ))}
+          </ul>
+        </>
       );
       break;
     case '東部地區':
@@ -60,10 +159,25 @@ const LinkActivity: NextPage = () => {
         <Image
           src={EASE}
           alt='東部地區'
-          width={450}
-          height={400}
+          width={400}
+          height={350}
           objectFit='cover'
+          layout='responsive'
         />
+      );
+      selectedList = (
+        <>
+          <ul className='link__card--lists'>
+            {Object.keys(activitiesEast).map((activityName) => (
+              <li
+                onClick={() => handleClickActivity(activityName)}
+                key={activityName}
+              >
+                {t(`activities.${activityName}.title`)}
+              </li>
+            ))}
+          </ul>
+        </>
       );
       break;
     case '離島地區':
@@ -74,7 +188,22 @@ const LinkActivity: NextPage = () => {
           width={450}
           height={400}
           objectFit='cover'
+          layout='responsive'
         />
+      );
+      selectedList = (
+        <>
+          <ul className='link__card--lists'>
+            {Object.keys(activitiesIslands).map((activityName) => (
+              <li
+                onClick={() => handleClickActivity(activityName)}
+                key={activityName}
+              >
+                {t(`activities.${activityName}.title`)}
+              </li>
+            ))}
+          </ul>
+        </>
       );
       break;
     default:
@@ -82,17 +211,17 @@ const LinkActivity: NextPage = () => {
   }
 
   return (
-    <article className='link'>
+    <header id='link-activity' className='link'>
       <main className='link__container'>
-        <header className='link__title'>
-          <h1>
+        <article className='link__title'>
+          <h2>
             {t('linkActivity.link')}
             <span>
-              <Image src={FESTIVAL} width={20} height={20} />
+              <Image src={FESTIVAL} width={30} height={30} alt='img' />
             </span>
             {t('linkActivity.activity')}
-          </h1>
-        </header>
+          </h2>
+        </article>
         <footer className='link__items'>
           <span
             className='link__items--item link__items--item-1'
@@ -126,40 +255,64 @@ const LinkActivity: NextPage = () => {
           </span>
         </footer>
         <section className='link__card'>
-          {selectedImage}
-          <ul>
-            <span>
-              <h2>
-                {t('linkActivity.north') + t('linkActivity.summerSeries')}
-              </h2>
-              <Image src={LINK} width={20} height={20} />
-            </span>
-            <span>
-              <h2>
-                {t('linkActivity.middle') + t('linkActivity.summerSeries')}
-              </h2>
-              <Image src={LINK} width={20} height={20} />
-            </span>
-            <span>
-              <h2>
-                {t('linkActivity.south') + t('linkActivity.summerSeries')}
-              </h2>
-              <Image src={LINK} width={20} height={20} />
-            </span>
-            <span>
-              <h2>{t('linkActivity.east') + t('linkActivity.summerSeries')}</h2>
-              <Image src={LINK} width={20} height={20} />
-            </span>
-            <span>
-              <h2>
-                {t('linkActivity.islands') + t('linkActivity.summerSeries')}
-              </h2>
-              <Image src={LINK} width={20} height={20} />
-            </span>
-          </ul>
+          <span className='link__card--images'>{selectedImage}</span>
+          {showDetails ? (
+            <article className='link__card--box'>
+              <h2>{t(`activities.${selectedActivity?.title}.title`)}</h2>
+              <span className='link__card--box-img'>
+                <Carousel
+                  images={selectedActivity?.images}
+                  size={{ width: '100%', height: '100%' }}
+                />
+              </span>
+              <span className='link__card--box-list'>
+                <br />
+                <p>
+                  {t('activities.description')} <br />
+                  <span>
+                    {t(`activities.${selectedActivity?.title}.description`)}
+                  </span>
+                </p>
+                <br />
+                <hr />
+                <p>
+                  {t('activities.organizer')}
+                  <span>
+                    {t(`activities.${selectedActivity?.title}.organizer`)}
+                  </span>
+                </p>
+                <p>
+                  {t('activities.location')}
+                  <span>
+                    {t(`activities.${selectedActivity?.title}.location`)}
+                  </span>
+                </p>
+                <p>
+                  {t('activities.time')}
+                  <span>{t(`activities.${selectedActivity?.title}.time`)}</span>
+                </p>
+                <span className='link__actions'>
+                  <a
+                    onClick={handleHideDetails}
+                    className='link__external link__external--green'
+                  >
+                    {t('activities.return')}
+                  </a>
+                  <a
+                    href={selectedActivity?.link}
+                    className='link__external link__external--red'
+                  >
+                    {t('activities.related-activities')}
+                  </a>
+                </span>
+              </span>
+            </article>
+          ) : (
+            selectedList
+          )}
         </section>
       </main>
-    </article>
+    </header>
   );
 };
 

@@ -1,4 +1,4 @@
-import { BACKGROUND, DYNAMIC, LOGO } from '@helpers/imageImports';
+import { BACKGROUND, DYNAMIC } from '@helpers/imageImports';
 
 import { NextPage } from 'next';
 import Image from 'next/image';
@@ -10,12 +10,20 @@ const MainContent: NextPage = () => {
   return (
     <>
       <header className='home'>
-        <Image src={BACKGROUND} layout='fill' objectFit='cover' />
-        <Image src={DYNAMIC} objectFit='cover' className='home__dynamic' />
+        <Image
+          src={BACKGROUND}
+          layout='fill'
+          objectFit='cover'
+          className='home__img'
+          alt='2023台灣仲夏旅遊節 Taiwan Summer Tourism Festival'
+        />
+        <Image
+          src={DYNAMIC}
+          objectFit='cover'
+          className='home__dynamic'
+          alt='img'
+        />
         <article className='home__container'>
-          <span className='home__logo'>
-            <Image src={LOGO} width={240} height={60} className='home__logo' />
-          </span>
           <main className='home__content'>
             <h1>{t('home.title')}</h1>
             <br />

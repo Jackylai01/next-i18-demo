@@ -2,50 +2,51 @@
   width: 100%;
   height: 100%;
   position: relative;
-}
 
-.swiper-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
+  &--dragging {
+    cursor: grab;
 
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-}
+    .swiper__slide {
+      pointer-events: none;
+    }
+  }
 
-.swiper-pagination {
-  height: 100%;
-  width: 20px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  padding-right: 2rem;
-  z-index: 1;
-}
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
 
-.swiper-pagination span {
-  width: 10px;
-  height: 10px;
-  background: #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-}
+  &__slide {
+    width: 100%;
+    height: 100%;
+  }
 
-.swiper-pagination span.active {
-  background: cornflowerblue;
-}
+  &__pagination {
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    right: 10px; /* 調整這裡來改變點的距離右邊的距離 */
+    top: 50%; /* 讓點在垂直方向上居中 */
+    transform: translateY(-50%); /* 配合 top: 50%; 使用 */
+    z-index: 1; /* 新增這行 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-right: 2rem;
 
-.swiper.dragging {
-  cursor: grab;
-}
+    &-dot {
+      width: 10px;
+      height: 10px;
+      background: #ffffff;
+      border-radius: 50%;
+      cursor: pointer;
 
-.swiper.dragging img {
-  pointer-events: none;
+      &--active {
+        background: cornflowerblue;
+      }
+    }
+  }
 }
