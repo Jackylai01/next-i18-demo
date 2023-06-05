@@ -10,7 +10,7 @@ const Midsummer: NextPage = () => {
     <header id='midsummer-activity' className='midsummer'>
       <main className='midsummer__container'>
         <article className='midsummer__title'>
-          <h1>{t('midsummer.title')}</h1>
+          <h2>{t('midsummer.title')}</h2>
         </article>
         <section className='midsummer__card'>
           <span className='midsummer__card--caption'>
@@ -25,7 +25,7 @@ const Midsummer: NextPage = () => {
         </span>
         <section className='midsummer__items'>
           <span className='midsummer__items--caption'>
-            <h1>{t('midsummer.title01')}</h1>
+            <h3>{t('midsummer.title01')}</h3>
             <footer className='midsummer__items--caption-content'>
               <li>{t('midsummer.list01')}</li>
               <li>{t('midsummer.list02')}</li>
@@ -45,7 +45,7 @@ const Midsummer: NextPage = () => {
             />
           </span>
           <span className='midsummer__items--caption'>
-            <h1>{t('midsummer.title02')}</h1>
+            <h3>{t('midsummer.title02')}</h3>
             <footer className='midsummer__items--caption-content'>
               <li>{t('midsummer.list05')}</li>
               <li>{t('midsummer.list06')}</li>
@@ -59,7 +59,7 @@ const Midsummer: NextPage = () => {
         </section>
         <section className='midsummer__items'>
           <span className='midsummer__items--caption'>
-            <h1>{t('midsummer.title03')}</h1>
+            <h3>{t('midsummer.title03')}</h3>
             <footer className='midsummer__items--caption-content'>
               <li>{t('midsummer.list12')}</li>
               <li>{t('midsummer.list13')}</li>

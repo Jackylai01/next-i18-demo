@@ -11,15 +11,13 @@ import { getI18nProps } from '../helpers/i18n';
 export default function HomePage() {
   return (
     <>
-      <article style={{ height: '100vh' }}>
-        <NavBar />
-        <MainContent />
-        <Banner />
-        <LinkActivity />
-        <MainActivity />
-        <Midsummer />
-        <Footer />
-      </article>
+      <NavBar />
+      <MainContent />
+      <Banner />
+      <LinkActivity />
+      <MainActivity />
+      <Midsummer />
+      <Footer />
     </>
   );
 }

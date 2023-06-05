@@ -1,5 +1,4 @@
 import {
-  ACTIVITY,
   ACTIVITY01,
   ACTIVITY02,
   ACTIVITY03,
@@ -16,13 +15,10 @@ const MainActivity: NextPage = () => {
     <article id='main-activity' className='activity'>
       <main className='activity__container'>
         <header className='activity__title'>
-          <h3>
+          <h2>
             {t('mainActivity.spindle')}
-            <span>
-              <Image src={ACTIVITY} width={30} height={30} alt='img' />
-            </span>
             {t('mainActivity.activity')}
-          </h3>
+          </h2>
         </header>
         <section className='activity__card'>
           <Image
@@ -34,7 +30,9 @@ const MainActivity: NextPage = () => {
             alt='img'
           />
           <span className='activity__card--caption'>
-            <h3> {t('mainActivity.title')}</h3>
+            <h3>
+              <span>{t('mainActivity.title')}</span>
+            </h3>
             <footer className='activity__card--caption-content'>
               {t('mainActivity.desc')}
             </footer>
@@ -42,14 +40,14 @@ const MainActivity: NextPage = () => {
         </section>
         <section className='activity__card'>
           <span className='activity__card--caption'>
-            <h3> {t('mainActivity.title01')}</h3>
+            <h3>
+              <span>{t('mainActivity.title01')}</span>
+            </h3>
             <footer className='activity__card--caption-content'>
               <p>{t('mainActivity.desc01')}</p>
               <br />
-
               <p>{t('mainActivity.desc02')}</p>
               <br />
-
               <p>{t('mainActivity.desc03')}</p>
             </footer>
           </span>
@@ -72,7 +70,9 @@ const MainActivity: NextPage = () => {
             alt='img'
           />
           <span className='activity__card--caption'>
-            <h3>{t('mainActivity.title02')}</h3>
+            <h3>
+              <span>{t('mainActivity.title02')}</span>
+            </h3>
             <footer className='activity__card--caption-content'>
               <p>{t('mainActivity.desc04')}</p>
               <br />
@@ -84,7 +84,9 @@ const MainActivity: NextPage = () => {
         </section>
         <section className='activity__card'>
           <span className='activity__card--caption'>
-            <h3>{t('mainActivity.title03')}</h3>
+            <h3>
+              <span>{t('mainActivity.title03')}</span>
+            </h3>
             <footer className='activity__card--caption-content'>
               <p>{t('mainActivity.desc08')}</p>
               <p>{t('mainActivity.desc09')}</p>

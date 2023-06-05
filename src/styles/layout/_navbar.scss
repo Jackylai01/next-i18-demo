@@ -1,21 +1,24 @@
 .navbar {
-  position: fixed;
   width: 100%;
-
+  height: 100px;
+  position: fixed;
   z-index: 3;
-
-  &-scrolling {
-    background-color: rgb(255, 184, 108);
-    transition: background-color 0.5s ease-in-out;
-    z-index: 3;
-  }
+  background-color: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem 4rem;
-    border-bottom: 1px solid #0075c9;
+    padding: 0.8rem;
+    margin: 0.5rem 1rem;
+  }
+
+  &__logo {
+    width: 250px;
+    min-width: 120px;
+    padding: 0rem 1rem;
+    cursor: pointer;
   }
 
   &__right-container {
@@ -25,82 +28,85 @@
     gap: 1rem;
   }
 
-  &__logo {
-    width: 153px;
-    height: 40px;
-    cursor: pointer;
-    margin: 0rem 1rem;
-    @include pad-under-width() {
-      width: 143px;
-      height: 30px;
-    }
-  }
-
   &__list {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    cursor: pointer;
+    font-size: 1rem;
     @include pad-under-width() {
       position: absolute;
-      top: 80px;
+      top: 0;
       left: 0;
       right: 0;
       height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      padding-top: 3rem;
-      font-size: 1.5rem;
-      font-weight: bold;
-      background-color: rgb(247, 158, 125);
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      justify-content: center;
+      background-color: rgb(255, 229, 192);
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      transition: all 0.3s ease;
       z-index: 1;
     }
   }
 
   &__item {
     position: relative;
-    padding: 0rem 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &--community {
+      padding: 0rem 0.2rem;
+    }
 
     @include pad-under-width() {
-      display: block;
-      font-size: 22px;
-      font-weight: normal;
-      margin: 10px;
-      padding: 6px;
-      text-align: center;
-      background-color: rgb(247, 158, 125);
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
     }
   }
+
+  // 相關連結
   &__item-dropdown {
     display: none;
     position: absolute;
     top: 100%;
-    left: 5px;
-    margin-top: 0.4rem;
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 2rem 1.2rem;
-    cursor: pointer;
+    z-index: 1;
+    border-radius: 8px;
     li {
-      padding: 1rem 0rem;
+      display: flex;
+      justify-content: center;
+      white-space: nowrap;
+      padding: 1rem;
+
+      :hover {
+        color: coral;
+      }
+      > a {
+        color: inherit;
+        font-weight: 500;
+      }
     }
+
     &.open {
-      display: block;
+      display: inline-block;
     }
+
     @include pad-under-width() {
-      position: fixed;
-      top: 42%;
-      left: 50%;
-      margin: 0;
-      transform: translate(-50%, 0%);
-      width: 30%;
+      width: 100vw;
+      height: 100vh;
+      white-space: nowrap;
+      z-index: 3;
     }
     @include phone-width() {
-      position: fixed;
-      top: 42%;
-      width: 50vw;
+      white-space: nowrap;
+      font-size: 0.65rem;
     }
   }
 
@@ -108,10 +114,8 @@
     text-decoration: none;
     color: #0075c9;
     font-weight: 600;
-
-    @include pad-under-width() {
-      background-color: rgb(247, 158, 125);
-    }
+    font-size: 1.17rem;
+    letter-spacing: 1.5px;
   }
 
   &__menu-btn {
@@ -128,43 +132,42 @@
   }
 
   &__icon {
-    padding-top: 0.5rem;
     position: relative;
     cursor: pointer;
     z-index: 2;
+    font-weight: 700;
     &:hover .navbar__dropdown {
       display: block;
     }
   }
-
+  // 多國語系
   &__dropdown {
-    display: none;
     position: absolute;
     top: 100%;
-    right: 0;
-    list-style-type: none;
-    padding: 0;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  }
-
-  &__dropdown-item {
-    padding: 12px 16px;
-    font-size: large;
-    font-weight: 600;
-    color: black;
-    white-space: nowrap;
+    margin-top: 0.2rem;
     background-color: white;
-    &:hover {
-      background-color: rgb(111, 111, 111);
-      color: white;
-      cursor: pointer;
+    border-radius: 8px;
+    &-item {
+      padding: 1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: black;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: rgb(111, 111, 111);
+        color: white;
+        cursor: pointer;
+      }
     }
   }
 
   &-active {
+    cursor: pointer;
     .navbar__list {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      transition: all 0.3s linear;
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+      transition: all 0.3s ease;
     }
 
     .navbar__menu-btn {

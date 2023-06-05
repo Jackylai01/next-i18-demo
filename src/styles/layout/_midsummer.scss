@@ -78,7 +78,7 @@
     }
   }
   &__title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: #ff9900;
@@ -88,7 +88,7 @@
     justify-content: center;
     align-items: center;
 
-    h1 {
+    h2 {
       display: block;
       padding: 0 1rem;
       position: relative;
@@ -98,7 +98,7 @@
         position: absolute;
         top: 50%;
         left: 0;
-        width: 90px;
+        width: 5%;
         height: 2px;
         background-color: #ff9900;
         transform: translateX(-110%);
@@ -108,7 +108,7 @@
         position: absolute;
         top: 50%;
         right: 0;
-        width: 90px;
+        width: 5%;
         height: 2px;
         background-color: #ff9900;
         transform: translateX(110%);
@@ -202,10 +202,10 @@
         line-height: 35px;
       }
 
-      > h1 {
-        font-size: 2rem;
+      > h3 {
+        font-size: 1.17rem;
         font-weight: 600;
-        color: #995c01;
+        color: black;
 
         @include phone-width() {
           font-size: 1.5rem;

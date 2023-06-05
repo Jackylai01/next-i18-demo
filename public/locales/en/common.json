@@ -3,7 +3,13 @@
     "link1": "Series Events",
     "link2": "Main Events",
     "link3": "Tour Plan",
-    "link4": "Related Websites"
+    "link4": "Related Websites",
+    "relevant": "Tourism Bureau - Info Network",
+    "relevant1": "National Scenic Area Administration",
+    "relevant2": "Taiwan Travel Service",
+    "relevant3": "Taiwan Tourism Calendar",
+    "relevant4": "Taiwan Accommodation",
+    "relevant5": "Camping Area Information"
   },
   "home": {
     "title": "2023 Taiwan Midsummer Travel Festival: Midsummer Tour Project",
@@ -69,7 +75,7 @@
     "title01": "Cool",
     "list01": "2023 Island Life Festival (2023/07/15)",
     "list02": "2023 Yilan International Children's Art Festival",
-    "list03": "2023 Island Life Festival (2023/07/15)",
+    "list03": "2023 Red-faced Duck FUN Summer Vacation",
     "list04": "2023 Northeast Cape Fulong Life Festival",
     "title02": "Beat the Heat",
     "list05": "2023 Hsinchu City International Kite Festival",
@@ -193,7 +199,7 @@
       "description": "Nantou County has many wonderful scenery and natural environments, Hehuan Mountain Dark Sky Park is the third in Asia and the first internationally certified dark sky park in Taiwan. The Nantou Starry Sky Season, held since 2019, is to promote Nantou's most distinctive stargazing tourism.  In Hehuan Mountain, as long as you have a mobile phone, you can easily shoot the stars shining. As long as you look up, you can see the magnificent galaxy extending for thousands of miles. In order to promote astronomy education, promote stargazing tourism, and develop the starry sky industry chain, the Nantou County Government held the '2023 Nantou Starry Sky Season' from July 1 to September 30, 2023, which included four theme activities such as a starry sky theme concert, a featured tea table experience evening, a picnic moon appreciation evening, and a starry sky tour guide talent training courses.",
       "link": ""
     },
-    "2023雲西海洋音樂祭": {
+    "2023雲林海洋音樂祭": {
       "title": "2023 Yunlin Ocean Music Festival",
       "organizer": "Department of Cultural Affairs and Tourism, Yunlin County Government      ",
       "location": "Santiaolun Beach Water Park, Sihu Township, Yunlin County",
@@ -209,7 +215,7 @@
       "description": "Dance a lively ice-eating dance and share a message in a designated post tag @ two friends, you can eat the featured ice popsicles on each site of Tri-Mountain.",
       "link": ""
     },
-    "112年苗栗慢魚海岸海洋風場休閒觀光產業計畫": {
+    "苗栗慢魚海岸系列活動": {
       "title": "2023 Miaoli Slow Fish Coast Ocean Wind Farm Leisure Sightseeing",
       "organizer": "Culture and Tourism Bureau, Miaoli County",
       "location": "Miaoli Slow Fish Coast",
@@ -379,9 +385,9 @@
     },
     "return": "Return",
     "related-activities": "Related Websites",
-    "organizer": "Organizer:",
-    "location": "Event Venue:",
-    "time": " Event Date:",
-    "description": "Event Details:"
+    "organizer": "Organizer：",
+    "location": "Event Venue：",
+    "time": " Event Date：",
+    "description": "Event Details："
   }
 }

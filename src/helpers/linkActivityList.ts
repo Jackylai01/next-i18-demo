@@ -289,8 +289,8 @@ export const activitiesMiddle: Activities = {
       },
     ],
   },
-  '2023雲西海洋音樂祭': {
-    title: '2023雲西海洋音樂祭',
+  '2023雲林海洋音樂祭': {
+    title: '2023雲林海洋音樂祭',
     organizer: '雲林縣政府文化觀光處',
     location: '雲林縣四湖鄉三條崙海水浴場親水公園',
     time: '敬請期待',
@@ -342,8 +342,8 @@ export const activitiesMiddle: Activities = {
       },
     ],
   },
-  '112年苗栗慢魚海岸海洋風場休閒觀光產業計畫': {
-    title: '112年苗栗慢魚海岸海洋風場休閒觀光產業計畫',
+  苗栗慢魚海岸系列活動: {
+    title: '苗栗慢魚海岸系列活動',
     organizer: '苗栗縣政府文化觀光局',
     location: '敬請期待',
     time: '敬請期待',
@@ -601,23 +601,7 @@ export const activitiesSouth: Activities = {
     description:
       '為整合並提升雲嘉南地區藝文動能，105 年提議由雲林縣、嘉義市、嘉義縣與臺南市新營四個文化中心規劃促成劇場連線，著重區域間的劇場合作與觀眾開發。2016 年開辦「夏至藝術節」，開始推動各縣市間的行政合作與藝文資源統合，採取區域整合與服務加值的概念，以嶄新的劇場體驗結合藝文輕旅行，驅動縣市間的藝文動能、增加民眾參與多元藝術演出的機會，確立「雲嘉嘉營劇場連線」的必要與價值。「雲嘉嘉營劇場連線」計畫，在行政協力的基礎上，致力於劇場空間連線、在地藝文團隊流動、藝文資源共享、潛在觀眾開發、一日文化生活圈等跨域目標，讓雲嘉嘉營地區劇場成為未來南部藝文發展的核心之一。',
     link: 'https://summertheatrefestival.tainan.gov.tw/',
-    images: [
-      {
-        img: require('@public/Img/LinkActivity/南部區域/海灘貨幣減塑活動.png')
-          .default,
-        alt: 'image 1',
-      },
-      {
-        img: require('@public/Img/LinkActivity/南部區域/海灘貨幣減塑活動01.png')
-          .default,
-        alt: 'image 2',
-      },
-      {
-        img: require('@public/Img/LinkActivity/南部區域/海灘貨幣減塑活動03.png')
-          .default,
-        alt: 'image 3',
-      },
-    ],
+    images: [],
   },
 };
 
@@ -658,17 +642,17 @@ export const activitiesEast: Activities = {
     link: 'https://balloontaiwan.taitung.gov.tw/zh-tw',
     images: [
       {
-        img: require('@public/Img/LinkActivity/南部區域/2023鹽田-饗樂01.png')
+        img: require('@public/Img/LinkActivity/東部區域/2023臺灣國際熱氣球嘉年華01-台東縣政府提供.png')
           .default,
         alt: 'image 1',
       },
       {
-        img: require('@public/Img/LinkActivity/南部區域/2023鹽田-饗樂02.png')
+        img: require('@public/Img/LinkActivity/東部區域/2023臺灣國際熱氣球嘉年華02-台東縣政府提供.png')
           .default,
         alt: 'image 2',
       },
       {
-        img: require('@public/Img/LinkActivity/南部區域/2023鹽田-饗樂03.png')
+        img: require('@public/Img/LinkActivity/東部區域/2023臺灣國際熱氣球嘉年華03-台東縣政府提供.png')
           .default,
         alt: 'image 3',
       },

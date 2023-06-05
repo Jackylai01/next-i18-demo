@@ -15,7 +15,7 @@
   }
 
   &__title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: #ff4155;
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    h3 {
+    h2 {
       display: block;
       position: relative;
 
@@ -34,8 +34,8 @@
         content: '';
         position: absolute;
         top: 60%;
-        left: -30%;
-        width: 25%;
+        left: -25%;
+        width: 15%;
         height: 2px;
         background-color: #ff4155;
       }
@@ -43,8 +43,8 @@
         content: '';
         position: absolute;
         top: 60%;
-        right: -30%;
-        width: 25%;
+        right: -25%;
+        width: 15%;
         height: 2px;
         background-color: #ff4155;
       }
@@ -90,15 +90,18 @@
       &-content {
         margin: 2rem 0rem;
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 500;
         color: #00000089;
         line-height: 35px;
       }
       > h3 {
+        display: inline-block;
+        position: relative;
         font-size: 2rem;
         font-weight: 600;
         color: black;
         margin-top: 1.5rem;
+
         @include pad-under-width() {
           font-size: 1.5rem;
         }

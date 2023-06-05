@@ -1,12 +1,5 @@
 import Carousel from '@components/Carousel';
-import {
-  EASE,
-  FESTIVAL,
-  ISLANDS,
-  MIDDLE,
-  NORTH,
-  SOUTH,
-} from '@helpers/imageImports';
+import { EASE, ISLANDS, MIDDLE, NORTH, SOUTH } from '@helpers/imageImports';
 import {
   IActivity,
   activitiesEast,
@@ -81,9 +74,7 @@ const LinkActivity: NextPage = () => {
         <Image
           src={NORTH}
           alt='北部地區'
-          width={400}
-          height={350}
-          objectFit='cover'
+          objectFit='fill'
           layout='responsive'
         />
       );
@@ -107,9 +98,7 @@ const LinkActivity: NextPage = () => {
         <Image
           src={MIDDLE}
           alt='中部地區'
-          width={400}
-          height={350}
-          objectFit='cover'
+          objectFit='fill'
           layout='responsive'
         />
       );
@@ -133,9 +122,7 @@ const LinkActivity: NextPage = () => {
         <Image
           src={SOUTH}
           alt='南部地區'
-          width={400}
-          height={350}
-          objectFit='cover'
+          objectFit='fill'
           layout='responsive'
         />
       );
@@ -156,14 +143,7 @@ const LinkActivity: NextPage = () => {
       break;
     case '東部地區':
       selectedImage = (
-        <Image
-          src={EASE}
-          alt='東部地區'
-          width={400}
-          height={350}
-          objectFit='cover'
-          layout='responsive'
-        />
+        <Image src={EASE} alt='東部地區' objectFit='fill' layout='responsive' />
       );
       selectedList = (
         <>
@@ -185,9 +165,7 @@ const LinkActivity: NextPage = () => {
         <Image
           src={ISLANDS}
           alt='離島地區'
-          width={450}
-          height={400}
-          objectFit='cover'
+          objectFit='fill'
           layout='responsive'
         />
       );
@@ -216,39 +194,46 @@ const LinkActivity: NextPage = () => {
         <article className='link__title'>
           <h2>
             {t('linkActivity.link')}
-            <span>
-              <Image src={FESTIVAL} width={30} height={30} alt='img' />
-            </span>
             {t('linkActivity.activity')}
           </h2>
         </article>
         <footer className='link__items'>
           <span
-            className='link__items--item link__items--item-1'
+            className={`link__items--item link__items--item-default ${
+              selectedRegion === '北部地區' ? ' link__items--item-1' : ''
+            }`}
             onClick={() => handleClick('北部地區')}
           >
             {t('linkActivity.north')}
           </span>
           <span
-            className='link__items--item link__items--item-2'
+            className={`link__items--item link__items--item-default  ${
+              selectedRegion === '中部地區' ? 'link__items--item-2' : ''
+            }`}
             onClick={() => handleClick('中部地區')}
           >
             {t('linkActivity.middle')}
           </span>
           <span
-            className='link__items--item link__items--item-3'
+            className={`link__items--item link__items--item-default ${
+              selectedRegion === '南部地區' ? ' link__items--item-3' : ''
+            }`}
             onClick={() => handleClick('南部地區')}
           >
             {t('linkActivity.south')}
           </span>
           <span
-            className='link__items--item link__items--item-4'
+            className={`link__items--item link__items--item-default ${
+              selectedRegion === '東部地區' ? ' link__items--item-4' : ''
+            }`}
             onClick={() => handleClick('東部地區')}
           >
             {t('linkActivity.east')}
           </span>
           <span
-            className='link__items--item link__items--item-5'
+            className={`link__items--item link__items--item-default ${
+              selectedRegion === '離島地區' ? ' link__items--item-5' : ''
+            }`}
             onClick={() => handleClick('離島地區')}
           >
             {t('linkActivity.islands')}
@@ -258,7 +243,9 @@ const LinkActivity: NextPage = () => {
           <span className='link__card--images'>{selectedImage}</span>
           {showDetails ? (
             <article className='link__card--box'>
-              <h2>{t(`activities.${selectedActivity?.title}.title`)}</h2>
+              <h2 style={{ borderBottom: '4px solid #FAFF00' }}>
+                {t(`activities.${selectedActivity?.title}.title`)}
+              </h2>
               <span className='link__card--box-img'>
                 <Carousel
                   images={selectedActivity?.images}
@@ -268,7 +255,6 @@ const LinkActivity: NextPage = () => {
               <span className='link__card--box-list'>
                 <br />
                 <p>
-                  {t('activities.description')} <br />
                   <span>
                     {t(`activities.${selectedActivity?.title}.description`)}
                   </span>
