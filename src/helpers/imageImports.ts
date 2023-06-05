@@ -16,6 +16,7 @@ export { default as KIWI } from '@public/Img/Footer/11.奇花異果LOGO.png';
 export { default as BLACKBALL } from '@public/Img/Footer/12.黑丸嫩仙草.png';
 export { default as MYFEEL } from '@public/Img/Footer/13.MYFEEL品味誌.png';
 export { default as BEEBUZZ } from '@public/Img/Footer/14.微醺蜜月beebuzz_logo.png';
+export { default as TOURISMBUREAU } from '@public/Img/Footer/北觀處logo.png';
 export { default as ACTIVITY } from '@public/Img/Icon/activity 1.png';
 export { default as ARROW } from '@public/Img/Icon/arrow.png';
 export { default as CLOSE } from '@public/Img/Icon/close.png';

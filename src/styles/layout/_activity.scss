@@ -56,9 +56,8 @@
     flex-direction: row;
     justify-content: center;
     border-bottom: 1px solid #ff4155;
-    margin: 2rem 0rem;
     padding-bottom: 2rem;
-
+    margin-bottom: 2rem;
     @include pad-under-width() {
       flex-direction: column;
     }
@@ -108,4 +107,11 @@
       }
     }
   }
+}
+
+.bottom-line {
+  height: 5px;
+  width: 100%;
+  background-color: #faff00;
+  margin-top: 1.5rem;
 }

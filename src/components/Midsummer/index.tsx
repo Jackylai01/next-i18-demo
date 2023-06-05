@@ -26,6 +26,7 @@ const Midsummer: NextPage = () => {
         <section className='midsummer__items'>
           <span className='midsummer__items--caption'>
             <h3>{t('midsummer.title01')}</h3>
+            <hr className='line' />
             <footer className='midsummer__items--caption-content'>
               <li>{t('midsummer.list01')}</li>
               <li>{t('midsummer.list02')}</li>
@@ -46,6 +47,7 @@ const Midsummer: NextPage = () => {
           </span>
           <span className='midsummer__items--caption'>
             <h3>{t('midsummer.title02')}</h3>
+            <hr className='line' />
             <footer className='midsummer__items--caption-content'>
               <li>{t('midsummer.list05')}</li>
               <li>{t('midsummer.list06')}</li>
@@ -60,6 +62,7 @@ const Midsummer: NextPage = () => {
         <section className='midsummer__items'>
           <span className='midsummer__items--caption'>
             <h3>{t('midsummer.title03')}</h3>
+            <hr className='line' />
             <footer className='midsummer__items--caption-content'>
               <li>{t('midsummer.list12')}</li>
               <li>{t('midsummer.list13')}</li>
